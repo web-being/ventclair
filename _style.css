@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+.playfair {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+.nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+:root {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  text-underline-offset: 0.2em;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Playfair Display", serif;
+}
