@@ -9,6 +9,13 @@
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
 }
+
+
+.playfair-display-sc {
+  font-family: "Playfair Display SC", serif;
+  font-optical-sizing: auto;
+}
+
 .nunito-sans {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
@@ -28,5 +35,6 @@ a {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display SC", serif;
+  @apply tracking-wider font-semibold;
 }
