@@ -12,38 +12,42 @@
 </head>
 
 
-<section id="hero" class="bg-[url('./img/hero.avif')] bg-cover bg-center bg-slate-700 h-screen text-white">
-  <div class="container mx-auto px-4 md:px-6 relative flex flex-col items-start">
-    <a href="#hero" class="absolute top-20 inset-x-0 w-fit mx-auto group">
-      <img src="./img/logo.svg" alt="Logo" class="size-24 opacity-15">
-      <img src="./img/logo.svg" alt="Logo" class="absolute top-0 size-24 mix-blend-luminosity">
-      <img src="./img/logo.svg" alt="Logo" class="absolute top-0 size-24 mix-blend-screen opacity-20">
-      <img src="./img/logo.svg" alt="Logo" class="absolute top-0 size-24 mix-blend-overlay opacity-20 group-hover:opacity-100 transition-opacity duration-500">
-    </a>
-    <!-- <nav class="absolute right-0 top-8">
-      <ul class="flex gap-4">
-        <li><a href="#hero" class="inline-block py-4">Home</a></li>
-        <li><a href="#mission" class="inline-block py-4">Mission</a></li>
-        <li><a href="#quality" class="inline-block py-4">Quality</a></li>
-        <li><a href="#vision" class="inline-block py-4">Vision</a></li>
-        <li><a href="#art-of-detail" class="inline-block py-4">Art of Detail</a></li>
+<section id="hero" class=" bg-slate-700 h-screen text-white before:bg-linear-0 before:inset-x-0 before:h-[64vh] before:from-black/80 before:to-transparent before:absolute before:opacity-90 before:bottom-0 group">
+  <img src="./img/hero.avif" alt="Hero Image" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 duration-10000">
+  <div class="container mx-auto px-4 md:px-6 relative flex flex-col items-center">
+    <nav class="nunito absolute h-48 right-0 top-8 inset-x-0 text-amber-300">
+      <a href="#hero" class="absolute inset-x-0 w-fit mx-auto">
+        <img src="./img/logo.avif" alt="Logo" class="h-32 opacity-100">
+        <!-- <img src="./img/logo.svg" alt="Logo" class="absolute top-0 size-24 mix-blend-luminosity">
+        <img src="./img/logo.svg" alt="Logo" class="absolute top-0 size-24 mix-blend-screen opacity-20">
+        <img src="./img/logo.svg" alt="Logo" class="absolute top-0 size-24 mix-blend-overlay opacity-20 group-hover:opacity-100 transition-opacity duration-500"> -->
+      </a>
+      <ul class="absolute right-1/2 mt-10 mr-24 flex gap-12 uppercase tracking-widest text-sm">
+        <li><a href="#mission" class="inline-block py-2">Mission</a></li>
+        <li><a href="#quality" class="inline-block py-2">Quality</a></li>
+        <li><a href="#art-of-detail" class="inline-block py-2">Art of Detail</a></li>
+        <li><a href="#vision" class="inline-block py-2">Vision</a></li>
       </ul>
-    </nav> -->
+      <ul class="absolute left-1/2 mt-10 ml-24 flex gap-12 uppercase tracking-widest text-sm">
+        <li><a href="#vision" class="inline-block py-2">Projects</a></li>
+        <li><a href="#vision" class="inline-block py-2">Contact</a></li>
+        <li><a href="#vision" class="inline-block py-2">French</a></li>
+      </ul>
+    </nav>
     <!--
     <div class="language-switcher">
       <a href="?lang=en">EN</a> | <a href="?lang=fr">FR</a>
     </div> -->
 
-    <h1 class="playfair-display self-center text-center text-4xl md:text-6xl lg:text-8xl leading-none font-medium mt-[54vh] max-w-[18ch] text-shadow-lg">
-      Vent Clair Group<br />
-      <em class="playfair-display inline-block mt-2 text-4xl max-w-[20ch] font-medium">Luxury Renovation & Construction</em>
+    <h1 class="relative playfair-display-sc font-semibold self-center text-center text-4xl md:text-6xl lg:text-7xl leading-none tracking-wide mt-[64vh] max-w-[18ch] text-shadow-lg">
+      Luxury Renovation & Construction
     </h1>
     <p class="mt-6 self-center text-center text-lg max-w-200 text-slate-200/90">
       Vent Clair Groupe is a luxury real estate agency based in Montreal, Canada.<br>
       Offering a curated selection of non-conventional, high-quality homes for discerning clients.
     </p>
     <button
-      class="mt-8 self-center bg-gray-900/70 backdrop-blur-sm text-slate-200 px-6 py-4 transition-colors duration-200 ease-in-out cursor-pointer text-lg font-semibold rounded-full border border-gray-800 hover:bg-gray-950/70 hover:border-gray-700/70">Explore
+      class="mt-8 self-center bg-slate-900/70 backdrop-blur-sm text-slate-200 px-6 py-4 transition-colors duration-200 ease-in-out cursor-pointer text-lg font-semibold rounded-full border border-slate-800 hover:bg-slate-800/70 hover:border-slate-700/70">Explore
       Portfolio</button>
   </div>
 </section>
@@ -74,10 +78,10 @@
   </div>
 </section> -->
 
-<section id="mission" class="bg-slate-900 text-slate-100 text-center py-20 md:py-28">
+<section id="mission" class="bg-slate-900 text-slate-100 text-center py-20 md:py-28  bg-radial-[at_50%_75%] from-blue-400/20 via-indigo-500/5 to-transparent to-90%">
   <header class="container mx-auto px-4 md:px-6">
-    <p class="text-xl playfair uppercase tracking-wider text-amber-100 mb-2">Our mission</p>
-    <h2 class="playfair-display italic text-6xl">Building Excellence</h2>
+    <p class="text-xl nunito italic font-thin text-amber-200/90 mb-4">Our mission</p>
+    <h2 class="playfair-display-sc font-semibold text-6xl">Building Excellence</h2>
     <p class="mt-6 text-lg text-slate-400 max-w-[72ch] self-center mx-auto text-pretty">
       At Groupe Ventclair, we master the art of building with excellence.
       Each project is an architectural masterpiece, designed to enrich everyday life.
@@ -87,33 +91,37 @@
   </header>
 
   <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto px-4 md:px-6">
-    <figure class="mt-12">
-      <img src="./img/mission1.webp" alt="Mission Image" class="w-full h-128 rounded-t-xl shadow-xl object-cover">
-      <figcaption class="text-slate-500 z-2 block relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
+    <figure class="mt-12 duration-500 hover:scale-102">
+      <img src="./img/mission1.webp" alt="Mission Image" class="w-full h-128 rounded-xl shadow-xl object-cover">
+      <figcaption class="text-slate-500 hidden z-2 relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
         <h3 class="text-lg tracking-wide font-semibold leading-none">Cozy Living</h3>
       </figcaption>
     </figure>
-    <figure class="mt-12">
-      <img src="./img/mission2.webp" alt="Mission Image" class="w-full h-128 rounded-t-xl shadow-xl object-cover">
-      <figcaption class="text-slate-500 z-2 block relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
+    <figure class="mt-12 duration-500 hover:scale-102">
+      <img src="./img/mission2.webp" alt="Mission Image" class="w-full h-128 rounded-xl shadow-xl object-cover">
+      <figcaption class="text-slate-500 hidden z-2 relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
         <h3 class="text-lg tracking-wide font-semibold leading-none">Refined Exteriors</h3>
       </figcaption>
     </figure>
-    <figure class="mt-12">
-      <img src="./img/mission3.webp" alt="Mission Image" class="w-full h-128 rounded-t-xl shadow-xl object-cover">
-      <figcaption class="text-slate-500 z-2 block relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
+    <figure class="mt-12 duration-500 hover:scale-102">
+      <img src="./img/mission3.webp" alt="Mission Image" class="w-full h-128 rounded-xl shadow-xl object-cover">
+      <figcaption class="text-slate-500 hidden z-2 block relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
         <h3 class="text-lg tracking-wide font-semibold leading-none">Timeless Style</h3>
       </figcaption>
     </figure>
   </div>
 </section>
 
-<section id="quality" class="relative">
-  <img src="./img/crafting1.webp" alt="Quality Image" class="w-full h-[75vh] object-cover">
+<section id="quality" class="relative group overflow-clip">
+  <img src="./img/crafting1.webp" alt="Quality Image" class="w-full h-[75vh] object-cover duration-1000 scale-100 group-hover:scale-102">
   <div class="absolute z-1 inset-0 bg-gradient-to-b from-slate-900/80 to-slate-900/50 flex items-center justify-center">
     <div class="text-center text-white max-w-3xl px-4 md:px-6">
-      <h2 class="text-4xl md:text-5xl font-serif font-medium mb-6">Quality Craftsmanship</h2>
-      <p class="text-lg md:text-xl mb-8">At Groupe Ventclair, we believe that quality is the foundation of every successful project. Our commitment to excellence ensures that each structure we create is not only beautiful but also built to last.</p>
+      <img src="./img/icon7.avif" class="w-24 mb-12 mx-auto"/>
+      <h2 class="text-4xl md:text-5xl playfair-display-sc font-semibold mb-6">Quality Craftsmanship</h2>
+      <p class="text-lg md:text-xl mb-8">We prioritize uncompromising quality and refined design, grounded in a deep understanding of contemporary expectations.
+Every element is carefully selected to ensure durability, comfort, and excellence.
+From structure to finish, we apply the highest standards at every stage — because true quality is not only seen, but felt over time.
+</p>
       <!-- <a href="#projects" class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 px-6 py-3 rounded transition-colors">Explore Our Projects</a> -->
     </div>
   </div>
@@ -131,7 +139,7 @@
       <!-- <a href="#projects" class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 px-6 py-3 rounded transition-colors">Explore Our Projects</a> -->
     </div>
   </article>
-  <article class="bg-slate-900 text-white flex items-center justify-between gap-8 md:gap-16 flex-col md:flex-row overflow-clip">
+  <article class="bg-slate-900 text-white flex items-center justify-between gap-8 md:gap-16 flex-col md:flex-row overflow-clip group">
     <div class="w-1/3 mx-auto">
       <p class="text-slate-300 leading-relaxed text-lg mb-6">Redefining the Concept of Luxury</p>
       <h3 class="text-4xl md:text-4xl playfair-display-sc font-semibold tracking-wider text-slate-100 mb-8">Our Craftsmanship Philosophy</h3>
@@ -145,7 +153,7 @@
 </section>
 
 <section id="dream" class="bg-slate-900 text-white py-10 md:py-18 border-t border-t-slate-800">
-  <h2 class="container text-4xl md:text-5xl font-serif text-center mt-20 mb-8">Your Dream Home Awaits</h2>
+  <h2 class="container text-4xl md:text-5xl playfair-display-sc font-semibold tracking-wide text-center mt-20 mb-8">Your Dream Home Awaits</h2>
   <div class="container mx-auto px-4 md:px-6 text-center flex flex-row items-center">
     <div class="max-w-2xl mx-auto mb-8 text-left">
       <h3 class="text-2xl md:text-3xl font-serif  mb-4">Transforming Visions into Reality</h3>
@@ -195,7 +203,7 @@
   <div class="container mx-auto px-4 md:px-6">
     <div class="text-center max-w-3xl mx-auto mb-16">
       <div class="transition-all duration-1000 ease-out opacity-100 translate-y-0"><span class="text-slate-600 font-medium">OUR COMMITMENT</span>
-        <h2 class="text-3xl md:text-4xl font-serif text-slate-900 mt-2 mb-6 italic">Building Quality That Endures</h2>
+        <h2 class="text-3xl md:text-4xl playfair-display-sc font-semibold text-slate-900 mt-2 mb-6">Building Quality That Endures</h2>
         <p class="text-slate-700 leading-relaxed">Our commitment to quality is unwavering. We believe in creating structures that stand the test of time, combining durability with comfort and aesthetic appeal.</p>
       </div>
     </div>

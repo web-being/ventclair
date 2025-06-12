@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
+/* @font-face {
+  font-family: 'GoldLines';
+  src: url('./fonts/GoldLinesSerif.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+} */
+/*
+@font-face {
+  font-family: 'Erstoria';
+  src: url('./fonts/erstoria.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'theseasons';
+  src: url('./fonts/theseasons-reg.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.theseasons {
+  font-family: 'theseasons', sans-serif;
+  font-optical-sizing: auto;
+}
+
 .playfair {
   font-family: "Playfair", serif;
   font-optical-sizing: auto;
@@ -24,6 +50,8 @@
 
 :root {
   font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -32,9 +60,4 @@ a {
     text-decoration: underline;
     text-decoration-thickness: 1px;
   }
-}
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: "Playfair Display SC", serif;
-  @apply tracking-wider font-semibold;
 }
