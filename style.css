@@ -501,6 +501,9 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -1001,6 +1004,10 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .duration-54 {
+    --tw-duration: 54ms;
+    transition-duration: 54ms;
+  }
   .duration-200 {
     --tw-duration: 200ms;
     transition-duration: 200ms;
@@ -1021,13 +1028,25 @@
     --tw-duration: 1000ms;
     transition-duration: 1000ms;
   }
+  .duration-1080 {
+    --tw-duration: 1080ms;
+    transition-duration: 1080ms;
+  }
   .duration-2000 {
     --tw-duration: 2000ms;
     transition-duration: 2000ms;
   }
+  .duration-5400 {
+    --tw-duration: 5400ms;
+    transition-duration: 5400ms;
+  }
   .duration-10000 {
     --tw-duration: 10000ms;
     transition-duration: 10000ms;
+  }
+  .duration-10800 {
+    --tw-duration: 10800ms;
+    transition-duration: 10800ms;
   }
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
@@ -1054,6 +1073,16 @@
         --tw-scale-x: 102%;
         --tw-scale-y: 102%;
         --tw-scale-z: 102%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:scale-104 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 104%;
+        --tw-scale-y: 104%;
+        --tw-scale-z: 104%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
       }
     }
@@ -1280,6 +1309,16 @@
         --tw-scale-x: 105%;
         --tw-scale-y: 105%;
         --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-108 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 108%;
+        --tw-scale-y: 108%;
+        --tw-scale-z: 108%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
       }
     }
