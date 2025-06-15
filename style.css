@@ -488,6 +488,12 @@
   .max-w-200 {
     max-width: calc(var(--spacing) * 200);
   }
+  .max-w-220 {
+    max-width: calc(var(--spacing) * 220);
+  }
+  .max-w-240 {
+    max-width: calc(var(--spacing) * 240);
+  }
   .max-w-\[18ch\] {
     max-width: 18ch;
   }
@@ -819,6 +825,9 @@
   }
   .object-\[size\:100\%\] {
     object-position: 100%;
+  }
+  .object-bottom {
+    object-position: bottom;
   }
   .object-center {
     object-position: center;
