@@ -580,6 +580,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-stretch {
+    justify-content: stretch;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -1144,6 +1147,9 @@
     --tw-ease: var(--ease-out);
     transition-timing-function: var(--ease-out);
   }
+  .\[--scroll-amount\:1\] {
+    --scroll-amount: 1;
+  }
   .\[scrollbar-width\:none\] {
     scrollbar-width: none;
   }
@@ -1589,6 +1595,13 @@
     &:hover {
       @media (hover: hover) {
         text-decoration-line: none !important;
+      }
+    }
+  }
+  .hover\:\[--scroll-amount\:0\] {
+    &:hover {
+      @media (hover: hover) {
+        --scroll-amount: 0;
       }
     }
   }
