@@ -11,34 +11,36 @@
 </head>
 
 
-<section id="hero" class=" relative bg-slate-700 h-screen text-white before:bg-linear-0 before:inset-x-0 before:h-full before:z-1 before:to-slate-900/80 before:from-slate-800/40 before:absolute before:opacity-90 before:bottom-0 group overflow-clip">
+<section id="hero"
+  class="flex flex-col relative bg-slate-700 min-h-[90vh] lg:h-screen text-white before:bg-linear-0 before:inset-x-0 before:h-full before:z-1 before:to-slate-900/80 before:from-slate-800/40 before:absolute before:opacity-90 before:bottom-0 group overflow-clip">
   <img src="./img/hero.avif" alt="Hero Image" class="absolute inset-0 w-full h-full object-bottom object-cover group-hover:scale-110 origin-bottom ease-in-out duration-10800">
-  <div class="relative z-2 container mx-auto px-4 md:px-6 flex flex-col items-center">
-    <nav class="nunito absolute h-48 right-0 top-8 inset-x-0 text-amber-300">
-      <a href="#hero" class="absolute inset-x-0 w-fit mx-auto">
-        <img src="./img/logo.avif" alt="Logo" class="h-32 opacity-100">
-        <!-- <img src="./img/logo.svg" alt="Logo" class="absolute top-0 size-24 mix-blend-luminosity">
+  <nav class="nunito container px-6 mx-auto lg:absolute right-0 top-8 inset-x-0 text-amber-300 z-1 grid grid-cols-3 items-start mt-12 mb-24">
+    <ul class="mt-4 gap-2 lg:gap-12 uppercase tracking-[0.33ch] text-xs md:text-sm flex flex-col lg:flex-row *:inline-block lg:*:py-2 lg:justify-end">
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#quality">Quality</a></li>
+      <li><a href="#art-of-detail">Craft</a></li>
+      <li><a href="#vision">Vision</a></li>
+    </ul>
+    <a href="#hero" class=" inset-x-0 w-fit shrink-0 mx-auto">
+      <img src="./img/logo.avif" alt="Logo" class="h-32 object-contain opacity-100">
+      <!-- <img src="./img/logo.svg" alt="Logo" class="absolute top-0 size-24 mix-blend-luminosity">
         <img src="./img/logo.svg" alt="Logo" class="absolute top-0 size-24 mix-blend-screen opacity-20">
         <img src="./img/logo.svg" alt="Logo" class="absolute top-0 size-24 mix-blend-overlay opacity-20 group-hover:opacity-100 transition-opacity duration-500"> -->
-      </a>
-      <ul class="absolute right-1/2 mt-10 mr-24 flex gap-4 lg:gap-12 uppercase tracking-widest text-sm max-md:hidden">
-        <li><a href="#mission" class="inline-block py-2">Mission</a></li>
-        <li><a href="#quality" class="inline-block py-2">Quality</a></li>
-        <li><a href="#art-of-detail" class="inline-block py-2">Craft</a></li>
-        <li><a href="#vision" class="inline-block py-2">Vision</a></li>
-      </ul>
-      <ul class="absolute left-1/2 mt-10 ml-24 flex gap-4 lg:gap-12 uppercase tracking-widest text-sm max-md:hidden">
-        <li><a href="#projects" class="inline-block py-2">Our Projects</a></li>
-        <li><a href="#contact" class="inline-block py-2">Contact Us</a></li>
-        <li><a href="./fr" class="inline-block py-2">Fr</a> / <a href="./" class="inline-block py-2">En</a></li>
-      </ul>
-    </nav>
+    </a>
+    <ul class="mt-4 text-right gap-2 lg:gap-12 uppercase tracking-[0.33ch] text-xs md:text-sm flex flex-col lg:flex-row *:inline-block lg:*:py-2">
+      <li><a href="#projects">Portfolio</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="./fr">Fr</a></li>
+    </ul>
+  </nav>
+
+  <div class="relative mt-auto z-2 container mx-auto px-4 md:px-6 pb-16 lg:pb-24 flex flex-col items-center">
     <!--
     <div class="language-switcher">
       <a href="?lang=en">EN</a> | <a href="?lang=fr">FR</a>
     </div> -->
 
-    <h1 class="relative playfair-display-sc font-semibold self-center text-center text-4xl md:text-6xl lg:text-7xl leading-none tracking-wide mt-[40vh] md:mt-[64vh] max-w-240 text-shadow-lg">
+    <h1 class="relative playfair-display-sc font-semibold self-center text-center text-4xl md:text-6xl lg:text-7xl leading-none tracking-wide max-w-240 text-shadow-lg">
       Luxury Renovation and Construction
     </h1>
     <p class="mt-6 self-center text-center text-lg max-w-200 text-slate-200/90">
@@ -88,21 +90,21 @@
     </p>
   </header>
 
-  <div class="mt-12 md:mt-24 grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-8 container mx-auto px-4 md:px-6">
+  <div class="mt-12 lg:mt-24 grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-8 container mx-auto px-4 lg:px-6">
     <figure class="duration-1080 hover:scale-102">
-      <img src="./img/mission1.avif" alt="Mission Image" class="w-full h-64 md:h-128 rounded-xl shadow-xl object-cover">
+      <img src="./img/mission1.avif" alt="Mission Image" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
       <figcaption class="text-slate-500 hidden z-2 relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
         <h3 class="text-lg tracking-wide font-semibold leading-none">Cozy Living</h3>
       </figcaption>
     </figure>
     <figure class="duration-1080 hover:scale-102">
-      <img src="./img/mission2.avif" alt="Mission Image" class="w-full h-64 md:h-128 rounded-xl shadow-xl object-cover">
+      <img src="./img/mission2.avif" alt="Mission Image" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
       <figcaption class="text-slate-500 hidden z-2 relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
         <h3 class="text-lg tracking-wide font-semibold leading-none">Refined Exteriors</h3>
       </figcaption>
     </figure>
     <figure class="duration-1080 hover:scale-102">
-      <img src="./img/mission3.avif" alt="Mission Image" class="w-full h-64 md:h-128 rounded-xl shadow-xl object-cover">
+      <img src="./img/mission3.avif" alt="Mission Image" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
       <figcaption class="text-slate-500 hidden z-2 relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
         <h3 class="text-lg tracking-wide font-semibold leading-none">Timeless Style</h3>
       </figcaption>
@@ -128,34 +130,35 @@
 
 <section id="art-of-detail">
   <article class="py-20 md:py-28 max-md:px-6 flex items-center justify-between gap-8 md:gap-16 flex-col md:flex-row">
-    <img src="./img/crafting3.avif" alt="Crafting Image" class="md:w-1/2 h-auto rounded-xl md:rounded-l-none md:rounded-r-2xl shadow-lg object-cover transition-transform duration-5400 ease-out transform hover:scale-105">
-    <div class="md:w-1/3 mx-auto">
+    <img src="./img/crafting3.avif" alt="Crafting Image" class="md:w-1/2 h-auto self-start max-md:max-h-82 rounded-xl md:rounded-l-none md:rounded-r-2xl shadow-lg object-cover transition-transform duration-5400 ease-out transform hover:scale-105">
+    <div class="md:w-2/5 mr-auto">
       <h3 class="text-4xl md:text-4xl playfair-display-sc font-semibold tracking-wider text-slate-600 mb-8">The Art of Detail</h3>
       <p class="text-slate-700 leading-relaxed text-lg mb-6">Each creation embodies the perfect balance between cutting-edge innovation, meticulous craftsmanship, and timeless style.
         It is within the smallest details that true elegance reveals itself — where design transforms into art, and craftsmanship gives way to a lasting legacy.</p>
     </div>
   </article>
-  <article class="bg-slate-900 max-md:pb-0 text-white flex items-center justify-between gap-8 md:gap-16 flex-col md:flex-row group py-12 md:py-20 overflow-clip">
+  <article class="bg-slate-900 max-md:pb-0 text-white flex items-center justify-between gap-8 md:gap-16 flex-col sm:flex-row group md:py-20 overflow-clip">
     <div class="md:w-1/3 mx-auto">
-      <p class="max-md:px-6 max-lg:pt-12 text-slate-300 leading-relaxed text-lg mb-6">Redefining the Concept of Luxury</p>
+      <p class="max-md:px-6 text-slate-300 leading-relaxed text-lg mb-6 mt-12">Redefining the Concept of Luxury</p>
       <h3 class="max-md:px-6 text-4xl md:text-4xl playfair-display-sc font-semibold tracking-wider text-slate-100 mb-8">Our Craftsmanship Philosophy</h3>
-      <p class="max-md:px-6 text-slate-300 leading-relaxed text-lg mb-6">We approach each project with a philosophy of craftsmanship that values quality over quantity. Our team of skilled artisans and architects work collaboratively to ensure that every element of your home is crafted with precision and care, resulting in a space that is not only functional but also a work of art.</p>
+      <p class="max-md:px-6 text-slate-300 leading-relaxed text-lg mb-6">We approach each project with a philosophy of craftsmanship that values quality over quantity. Our team of skilled artisans and architects work collaboratively to ensure that every
+        element of your home is crafted with precision and care, resulting in a space that is not only functional but also a work of art.</p>
       <!-- <img src="./img/icon4.avif" class="size-18 mt-12 max-lg:hidden min-h-full" /> -->
       <!-- <a href="#projects" class="inline-block bg-gold-500 hover:bg-gold-600 text-slate-900 px-6 py-3 rounded transition-colors">Explore Our Projects</a> -->
     </div>
-    <img src="./img/crafting2.avif" alt="Crafting Image" class="md:w-1/2 h-auto object-cover  rounded-2xl transition-transform duration-5400 ease-out transform origin-left hover:scale-105">
+    <img src="./img/crafting2.avif" alt="Crafting Image" class="md:w-1/2 h-auto max-md:max-h-160 object-cover md:rounded-2xl transition-transform duration-5400 ease-out transform origin-left hover:scale-105">
   </article>
 </section>
 
-<section id="vision" class="bg-slate-900 text-white py-10 md:py-18 border-t border-t-slate-800">
-  <h2 class="container text-4xl md:text-5xl playfair-display-sc font-semibold tracking-wide text-center mt-6 mb-12 mx-auto">Our Vision</h2>
+<section id="vision" class="bg-slate-900 text-white py-10 border-t border-t-slate-800">
+  <h2 class="container text-4xl md:text-5xl playfair-display-sc font-semibold tracking-wide text-center my-6 md:mb-12 mx-auto">Our Vision</h2>
   <div class="container mx-auto px-4 md:px-6 text-center flex flex-col md:flex-row items-center gap-12">
     <div class="max-w-2xl mx-auto md:mb-8 text-left">
-      <h3 class="text-2xl md:text-3xl font-serif  mb-4">Transforming Visions into Reality</h3>
+      <h3 class="text-2xl md:text-3xl font-serif mb-4">Transforming Visions into Reality</h3>
       <p class="text-lg md:text-xl text-slate-300">We believe a living space should reflect a sophisticated lifestyle.
         Every detail is thoughtfully designed to provide exceptional comfort, harmoniously blending elegance and functionality for a high-end experience.</p>
     </div>
-    <img src="./img/dream.avif" alt="Dream Home Image" class="w-full md:w-1/2 h-auto rounded-lg shadow-lg object-cover transition-transform duration-5400 ease-out transform hover:scale-108 order-0">
+    <img src="./img/dream.avif" alt="Dream Home Image" class="w-full md:w-1/2 h-auto max-md:max-h-82 rounded-lg shadow-lg object-cover transition-transform duration-5400 ease-out transform hover:scale-108 order-0">
   </div>
 </section>
 
@@ -166,8 +169,8 @@
   </div>
 </section> -->
 
-<section id="qualities" class="bg-slate-900 text-white py-16 md:py-20 lg:py-28">
-  <div class="grid grid-cols-1 md:grid-cols-3 container px-6 gap-8 md:gap-20 mx-auto">
+<section id="qualities" class="bg-slate-900 text-white pt-8 pb-16 md:pb-20 lg:pb-28">
+  <div class="grid grid-cols-1 sm:grid-cols-3 container px-6 gap-8 md:gap-20 mx-auto">
     <article class="max-md:text-center">
       <img src="./img/icon1.avif" class="size-18 max-md:mx-auto mb-6 md:mb-12" />
       <h3 class="text-2xl mb-4">Experience</h3>
@@ -186,10 +189,10 @@
   </div>
 </section>
 
-<section id="projects" class="py-20 md:py-28 bg-gradient-to-b from-slate-50 to-slate-100">
+<section id="projects" class="py-16 md:py-28 bg-gradient-to-b from-slate-50 to-slate-100">
   <div class="container mx-auto px-4 md:px-6">
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <div class="transition-all duration-1000 ease-out opacity-100 translate-y-0"><span class="text-slate-600 font-medium">OUR PROJECTS</span>
+      <div class="transition-all duration-1000 ease-out opacity-100 translate-y-0"><span class="text-slate-600 font-medium uppercase">Our Projects</span>
         <h2 class="text-3xl md:text-4xl playfair-display-sc font-semibold text-slate-900 mt-2 mb-6">A Showcase of Our Work</h2>
         <p class="text-slate-700 leading-relaxed">Our portfolio highlights the homes we've built with precision, creativity, and care. Each project reflects our commitment to quality construction, thoughtful design, and client satisfaction.</p>
       </div>
@@ -387,7 +390,7 @@
     <div class="border-t border-slate-800 my-8"></div>
     <div class="flex flex-col md:flex-row justify-between items-center">
       <p class="text-slate-200 text-sm">© 2025 Groupe Ventclair. All rights reserved.</p>
-      <p class="text-slate-200 text-sm mt-2 md:mt-0"><span class="font-serif italic">Building a legacy through architectural excellence.</span></p>
+      <!-- <p class="text-slate-200 text-sm mt-2 md:mt-0"><span class="font-serif italic">Building a legacy through architectural excellence.</span></p> -->
     </div>
   </div>
 </footer>
