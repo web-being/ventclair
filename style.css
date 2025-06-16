@@ -1032,6 +1032,11 @@
       object-fit: cover;
     }
   }
+  .\*\:py-2 {
+    :is(& > *) {
+      padding-block: calc(var(--spacing) * 2);
+    }
+  }
   .group-hover\:translate-x-1 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
