@@ -236,9 +236,6 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
-  .right-1\/2 {
-    right: calc(1/2 * 100%);
-  }
   .bottom-8 {
     bottom: calc(var(--spacing) * 8);
   }
@@ -299,14 +296,8 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
-  }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
-  }
-  .mt-\[40vh\] {
-    margin-top: 40vh;
   }
   .mt-auto {
     margin-top: auto;
@@ -316,9 +307,6 @@
   }
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
-  }
-  .mr-24 {
-    margin-right: calc(var(--spacing) * 24);
   }
   .mr-auto {
     margin-right: auto;
@@ -346,9 +334,6 @@
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
-  }
-  .ml-24 {
-    margin-left: calc(var(--spacing) * 24);
   }
   .flex {
     display: flex;
@@ -381,9 +366,6 @@
   }
   .h-32 {
     height: calc(var(--spacing) * 32);
-  }
-  .h-48 {
-    height: calc(var(--spacing) * 48);
   }
   .h-64 {
     height: calc(var(--spacing) * 64);
@@ -470,12 +452,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .snap-x {
-    scroll-snap-type: x var(--tw-scroll-snap-strictness);
-  }
-  .snap-mandatory {
-    --tw-scroll-snap-strictness: mandatory;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -712,9 +688,6 @@
   .object-bottom {
     object-position: bottom;
   }
-  .object-center {
-    object-position: center;
-  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -835,10 +808,6 @@
   .tracking-wider {
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
-  }
-  .tracking-widest {
-    --tw-tracking: var(--tracking-widest);
-    letter-spacing: var(--tracking-widest);
   }
   .text-pretty {
     text-wrap: pretty;
@@ -1012,11 +981,6 @@
       flex-shrink: 0;
     }
   }
-  .\*\:snap-center {
-    :is(& > *) {
-      scroll-snap-align: center;
-    }
-  }
   .\*\:overflow-hidden {
     :is(& > *) {
       overflow: hidden;
@@ -1030,11 +994,6 @@
   .\*\:object-cover {
     :is(& > *) {
       object-fit: cover;
-    }
-  }
-  .\*\:py-2 {
-    :is(& > *) {
-      padding-block: calc(var(--spacing) * 2);
     }
   }
   .group-hover\:translate-x-1 {
@@ -1222,19 +1181,9 @@
       display: none;
     }
   }
-  .max-lg\:pt-12 {
-    @media (width < 64rem) {
-      padding-top: calc(var(--spacing) * 12);
-    }
-  }
   .max-md\:mx-auto {
     @media (width < 48rem) {
       margin-inline: auto;
-    }
-  }
-  .max-md\:hidden {
-    @media (width < 48rem) {
-      display: none;
     }
   }
   .max-md\:max-h-82 {
@@ -1287,16 +1236,6 @@
       margin-top: calc(var(--spacing) * 20);
     }
   }
-  .md\:mt-24 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 24);
-    }
-  }
-  .md\:mt-\[64vh\] {
-    @media (width >= 48rem) {
-      margin-top: 64vh;
-    }
-  }
   .md\:mb-8 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 8);
@@ -1305,11 +1244,6 @@
   .md\:mb-12 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 12);
-    }
-  }
-  .md\:h-128 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 128);
     }
   }
   .md\:w-1\/2 {
@@ -1327,11 +1261,6 @@
       width: calc(2/5 * 100%);
     }
   }
-  .md\:grid-cols-3 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
   .md\:grid-cols-4 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1345,11 +1274,6 @@
   .md\:gap-0 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:gap-8 {
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 8);
     }
   }
   .md\:gap-12 {
@@ -1392,11 +1316,6 @@
   .md\:px-20 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 20);
-    }
-  }
-  .md\:py-18 {
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 18);
     }
   }
   .md\:py-20 {
@@ -1633,11 +1552,6 @@ a {
   syntax: "*";
   inherits: false;
 }
-@property --tw-scroll-snap-strictness {
-  syntax: "*";
-  inherits: false;
-  initial-value: proximity;
-}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
@@ -1849,7 +1763,6 @@ a {
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
-      --tw-scroll-snap-strictness: proximity;
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
