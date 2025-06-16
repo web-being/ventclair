@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 
 <head>
@@ -13,63 +14,63 @@
 
 <section id="hero"
   class="flex flex-col relative bg-slate-700 min-h-[90vh] lg:h-screen text-white before:bg-linear-0 before:inset-x-0 before:h-full before:z-1 before:to-slate-900/80 before:from-slate-800/40 before:absolute before:opacity-90 before:bottom-0 group overflow-clip">
-  <img src="./img/hero.avif" alt="Image d'accueil" class="absolute inset-0 w-full h-full object-bottom object-cover group-hover:scale-110 origin-bottom ease-in-out duration-10800">
-  <nav class="nunito container px-6 mx-auto lg:absolute right-0 top-8 inset-x-0 text-amber-300 z-1 grid grid-cols-[auto,10rem,auto] items-start mt-12 mb-24">
-    <ul class="mt-4 gap-2 lg:gap-12 uppercase tracking-[0.33ch] text-xs md:text-sm flex flex-col lg:flex-row *:inline-block lg:*:py-2 lg:justify-end">
+  <img src="./img/hero.avif" alt="Image principale" class="absolute inset-0 w-full h-full animate-showcase object-cover group-hover:scale-110 origin-bottom ease-in-out duration-10800">
+  <nav class="nunito container px-6 mx-auto lg:absolute right-0 top-8 inset-x-0 text-amber-300 z-1 grid grid-cols-[1fr_min(27vw,13rem)_1fr] items-start mt-12 mb-24 duration-1000 delay-100 track-visible opacity-0 visible:opacity-100">
+    <ul class="mt-6 gap-2 md:gap-4 lg:gap-12 uppercase tracking-[0.33ch] text-xs md:text-sm flex flex-col lg:flex-row *:inline-block lg:*:py-2 lg:justify-end">
       <li><a href="#mission">Mission</a></li>
-      <li><a href="#quality">Qualité</a></li>
-      <li><a href="#art-of-detail">Artisanat</a></li>
+      <li class="max-lg:hidden"><a href="#qualite">Qualité</a></li>
+      <li><a href="#art-du-detail">Artisanat</a></li>
       <li><a href="#vision">Vision</a></li>
     </ul>
     <a href="#hero" class=" inset-x-0 w-fit shrink-0 mx-auto">
       <img src="./img/logo.avif" alt="Logo" class="h-32 object-contain opacity-100">
     </a>
-    <ul class="mt-4 text-right gap-2 lg:gap-12 uppercase tracking-[0.33ch] text-xs md:text-sm flex flex-col lg:flex-row *:inline-block lg:*:py-2">
-      <li><a href="#projects">Portfolio</a></li>
-      <li><a href="#contact">Nous contacter</a></li>
-      <li><a href="./">En</a></li>
+    <ul class="mt-6 text-right gap-2 md:gap-4 lg:gap-10 xl:gap-12 uppercase tracking-[0.33ch] text-xs md:text-sm flex flex-col lg:flex-row *:inline-block lg:*:py-2">
+      <li><a href="#projets">Portfolio</a></li>
+      <li “‘><a href="#contact">Nous contacter</a></li>
+      <li><a href="./en">En</a></li>
     </ul>
   </nav>
 
-  <div class="relative mt-auto z-2 container mx-auto px-4 md:px-6 pb-16 lg:pb-24 flex flex-col items-center">
-    <h1 class="relative playfair-display-sc font-semibold self-center text-center text-4xl md:text-6xl lg:text-7xl leading-none tracking-wide max-w-240 text-shadow-lg">
+  <div class="relative mt-auto z-2 container mx-auto px-4 md:px-6 pb-16 lg:pb-24 flex flex-col items-center track-visible duration-1080 opacity-0 visible:opacity-100">
+    <h1 class="relative playfair-display-sc font-semibold self-center text-center text-4xl md:text-6xl lg:text-7xl leading-none tracking-wide max-w-240 text-shadow-lg duration-1080 -translate-y-5 visible:translate-y-0 scale-98 visible:scale-100">
       Rénovation et construction de luxe
     </h1>
-    <p class="mt-6 self-center text-center text-lg max-w-200 text-slate-200/90">
-      Le Groupe Vent Clair est une agence immobilière de luxe basée à Montréal, Canada.<br>
-      Offrant une sélection soignée de résidences haut de gamme non conventionnelles pour une clientèle exigeante.
+    <p class="mt-6 self-center text-center text-lg max-w-200 text-slate-200/90 duration-1080 -translate-y-2 visible:translate-y-0 scale-98 visible:scale-100">
+      Groupe Vent Clair est une agence immobilière de luxe basée à Montréal, Canada.<br>
+      Offrant une sélection curated de maisons non conventionnelles et de haute qualité pour une clientèle exigeante.
     </p>
-    <a class="mt-8 self-center bg-slate-900/70 backdrop-blur-sm text-slate-200 px-6 py-4 transition-colors duration-200 ease-in-out cursor-pointer text-lg font-semibold rounded-full border border-slate-800 hover:bg-slate-800/70 hover:border-slate-700/70 no-underline!"
-      href="#projects">Découvrir le portfolio</a>
+    <a class="mt-8 self-center bg-slate-900/70 backdrop-blur-sm text-slate-200 px-6 py-4 transition-colors duration-200 ease-in-out cursor-pointer text-lg font-semibold rounded-full border border-slate-800 hover:bg-slate-800/70 hover:border-slate-700/70 no-underline! translate-y-5 visible:translate-y-0 scale-98 visible:scale-100"
+      href="#projets">Découvrir le portfolio</a>
   </div>
 </section>
 
-<section id="mission" class="bg-slate-900 text-slate-100 text-center py-16 md:py-20 lg:py-28  bg-radial-[at_50%_75%] from-blue-400/20 via-indigo-500/5 to-transparent to-90%">
+<section id="mission" class="bg-slate-900 text-slate-100 text-center py-16 md:py-20 lg:py-28 bg-radial-[at_50%_75%] from-blue-400/20 via-indigo-500/5 to-transparent to-90%">
   <header class="container mx-auto px-4 md:px-6">
-    <p class="text-xl nunito italic font-thin text-amber-200/90 mb-4">Notre mission</p>
-    <h2 class="playfair-display-sc font-semibold text-3xl md:text-5xl">Construire l'excellence</h2>
-    <p class="mt-6 text-lg text-slate-400 max-w-[72ch] self-center mx-auto text-pretty">
-      Au Groupe Ventclair, nous maîtrisons l'art de construire avec excellence.
+    <p class="text-xl nunito italic font-thin text-amber-200/90 mb-4 track-visible duration-1000 translate-y-4 visible:translate-y-0 scale-98 visible:scale-100 opacity-0 visible:opacity-100">Notre mission</p>
+    <h2 class="playfair-display-sc font-semibold text-3xl md:text-5xl track-visible duration-1000 translate-y-4 visible:translate-y-0 scale-98 visible:scale-100 opacity-0 visible:opacity-100">Construire l'excellence</h2>
+    <p class="mt-6 text-lg text-slate-400 max-w-160 self-center mx-auto track-visible duration-1000 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">
+      Chez Groupe Ventclair, nous maîtrisons l'art de construire avec excellence.
       Chaque projet est un chef-d'œuvre architectural, conçu pour enrichir la vie quotidienne.
-      Nous croyons que l'architecture est bien plus qu'une construction —
+      Nous croyons que l'architecture est bien plus que de la construction —
       c'est l'expression d'une vision, d'un mode de vie et d'un héritage à transmettre.
     </p>
   </header>
 
   <div class="mt-12 lg:mt-24 grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-8 container mx-auto px-4 lg:px-6">
-    <figure class="duration-1080 hover:scale-102">
+    <figure class="duration-1080 hover:scale-102 track-visible translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">
       <img src="./img/mission1.avif" alt="Image de mission" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
       <figcaption class="text-slate-500 hidden z-2 relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
-        <h3 class="text-lg tracking-wide font-semibold leading-none">Vie chaleureuse</h3>
+        <h3 class="text-lg tracking-wide font-semibold leading-none">Vie confortable</h3>
       </figcaption>
     </figure>
-    <figure class="duration-1080 hover:scale-102">
+    <figure class="duration-1080 hover:scale-102 track-visible translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">
       <img src="./img/mission2.avif" alt="Image de mission" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
       <figcaption class="text-slate-500 hidden z-2 relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
         <h3 class="text-lg tracking-wide font-semibold leading-none">Extérieurs raffinés</h3>
       </figcaption>
     </figure>
-    <figure class="duration-1080 hover:scale-102">
+    <figure class="duration-1080 hover:scale-102 track-visible translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">
       <img src="./img/mission3.avif" alt="Image de mission" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
       <figcaption class="text-slate-500 hidden z-2 relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
         <h3 class="text-lg tracking-wide font-semibold leading-none">Style intemporel</h3>
@@ -78,13 +79,13 @@
   </div>
 </section>
 
-<section id="quality" class="relative group overflow-clip">
-  <img src="./img/crafting1.avif" alt="Image de qualité" class="w-full h-[100vh] lg:h-[75vh] object-cover duration-10800 scale-100 group-hover:scale-108">
+<section id="qualite" class="relative group overflow-clip">
+  <img src="./img/crafting1.avif" alt="Image de qualité" class="animate-showcase w-full h-[100vh] lg:h-[75vh] object-cover duration-10800 scale-100 group-hover:scale-108">
   <div class="absolute z-1 inset-0 bg-gradient-to-b from-slate-900/80 to-slate-900/50 flex items-center justify-center">
     <div class="text-center text-white max-w-3xl px-4 md:px-6">
-      <img src="./img/icon8.avif" class="w-24 mb-12 mx-auto" />
-      <h2 class="text-4xl md:text-5xl playfair-display-sc font-semibold mb-6">Artisanat de qualité</h2>
-      <p class="text-lg md:text-xl mb-8">Nous privilégions une qualité sans compromis et un design raffiné, ancrés dans une compréhension approfondie des attentes contemporaines.
+      <img src="./img/icon8.avif" class="w-24 mb-12 mx-auto track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100" />
+      <h2 class="text-4xl md:text-5xl playfair-display-sc font-semibold mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">Artisanat de qualité</h2>
+      <p class="text-lg md:text-xl mb-8 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">Nous privilégions une qualité sans compromis et un design raffiné, ancré dans une compréhension profonde des attentes contemporaines.
         Chaque élément est soigneusement sélectionné pour garantir durabilité, confort et excellence.
         De la structure à la finition, nous appliquons les normes les plus élevées à chaque étape — car la véritable qualité se voit et se ressent avec le temps.
       </p>
@@ -92,64 +93,65 @@
   </div>
 </section>
 
-<section id="art-of-detail">
+<section id="art-du-detail">
   <article class="py-20 md:py-28 max-md:px-6 flex items-center justify-between gap-8 md:gap-16 flex-col md:flex-row">
-    <img src="./img/crafting3.avif" alt="Image d'artisanat" class="md:w-1/2 h-auto self-start max-md:max-h-82 rounded-xl md:rounded-l-none md:rounded-r-2xl shadow-lg object-cover transition-transform duration-5400 ease-out transform hover:scale-105">
+    <img src="./img/crafting3.avif" alt="Image d'artisanat" class="md:w-1/2 h-auto self-start max-md:max-h-82 rounded-xl md:rounded-l-none md:rounded-r-2xl shadow-lg object-cover duration-5400 ease-out transform hover:scale-105">
     <div class="md:w-2/5 mr-auto">
-      <h3 class="text-4xl md:text-4xl playfair-display-sc font-semibold tracking-wider text-slate-600 mb-8">L'art du détail</h3>
-      <p class="text-slate-700 leading-relaxed text-lg mb-6">Chaque création incarne l'équilibre parfait entre innovation de pointe, artisanat méticuleux et style intemporel.
-        C'est dans les plus petits détails que l'élégance véritable se révèle — où le design se transforme en art, et l'artisanat laisse place à un héritage durable.</p>
+      <h3 class="text-4xl md:text-4xl playfair-display-sc font-semibold tracking-wider text-slate-600 mb-8 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">L'art du détail</h3>
+      <p class="text-slate-700 leading-relaxed text-lg mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">Chaque création incarne l'équilibre parfait entre innovation de pointe, artisanat méticuleux et style intemporel.
+        C'est dans les moindres détails que la véritable élégance se révèle — où le design se transforme en art, et l'artisanat laisse place à un héritage durable.</p>
     </div>
   </article>
   <article class="bg-slate-900 max-md:pb-0 text-white flex items-center justify-between gap-8 md:gap-16 flex-col sm:flex-row group md:py-20 overflow-clip">
     <div class="md:w-1/3 mx-auto">
-      <p class="max-md:px-6 text-slate-300 leading-relaxed text-lg mb-6 mt-12">Redéfinir le concept de luxe</p>
-      <h3 class="max-md:px-6 text-4xl md:text-4xl playfair-display-sc font-semibold tracking-wider text-slate-100 mb-8">Notre philosophie d'artisanat</h3>
-      <p class="max-md:px-6 text-slate-300 leading-relaxed text-lg mb-6">Nous abordons chaque projet avec une philosophie d'artisanat qui valorise la qualité plutôt que la quantité.
-        Notre équipe d'artisans et d'architectes qualifiés travaille en collaboration pour s'assurer que chaque élément de votre maison est façonné avec précision et soin, créant un espace non seulement fonctionnel, mais aussi une œuvre d'art.</p>
+      <p class="max-md:px-6 text-slate-300 leading-relaxed text-lg mb-6 mt-12 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">Redéfinir le concept du luxe</p>
+      <h3 class="max-md:px-6 text-4xl md:text-4xl playfair-display-sc font-semibold tracking-wider text-slate-100 mb-8 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">Notre philosophie de l'artisanat</h3>
+      <p class="max-md:px-6 text-slate-300 leading-relaxed text-lg mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">Nous abordons chaque projet avec une philosophie de l'artisanat qui valorise la qualité sur la quantité. Notre équipe d'artisans et d'architectes qualifiés travaille en collaboration pour s'assurer que chaque
+        élément de votre maison est réalisé avec précision et soin, résultant en un espace qui est non seulement fonctionnel mais aussi une œuvre d'art.</p>
     </div>
     <img src="./img/crafting2.avif" alt="Image d'artisanat" class="md:w-1/2 h-auto max-md:max-h-160 object-cover md:rounded-2xl transition-transform duration-5400 ease-out transform origin-left hover:scale-105">
   </article>
 </section>
 
 <section id="vision" class="bg-slate-900 text-white py-10 border-t border-t-slate-800">
-  <h2 class="container text-4xl md:text-5xl playfair-display-sc font-semibold tracking-wide text-center my-6 md:mb-12 mx-auto">Notre vision</h2>
-  <div class="container mx-auto px-4 md:px-6 text-center flex flex-col md:flex-row items-center gap-12">
+  <h2 class="container text-4xl md:text-5xl playfair-display-sc font-semibold tracking-wide text-center my-6 md:mb-12 mx-auto track-visible duration-1080 translate-y-2 visible:translate-y-0 opacity-0 visible:opacity-100">Notre vision</h2>
+  <div class="container mx-auto px-4 md:px-6 text-center flex flex-col md:flex-row items-center gap-12 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">
     <div class="max-w-2xl mx-auto md:mb-8 text-left">
       <h3 class="text-2xl md:text-3xl font-serif mb-4">Transformer les visions en réalité</h3>
-      <p class="text-lg md:text-xl text-slate-300">Nous croyons qu'un espace de vie doit refléter un mode de vie sophistiqué.
+      <p class="text-lg md:text-xl text-slate-300">Nous croyons qu'un espace de vie doit refléter un style de vie sophistiqué.
         Chaque détail est soigneusement conçu pour offrir un confort exceptionnel, alliant harmonieusement élégance et fonctionnalité pour une expérience haut de gamme.</p>
     </div>
     <img src="./img/dream.avif" alt="Image de maison de rêve" class="w-full md:w-1/2 h-auto max-md:max-h-82 rounded-lg shadow-lg object-cover transition-transform duration-5400 ease-out transform hover:scale-108 order-0">
   </div>
 </section>
 
-<section id="qualities" class="bg-slate-900 text-white pt-8 pb-16 md:pb-20 lg:pb-28">
+<section id="qualites" class="bg-slate-900 text-white pt-8 pb-16 md:pb-20 lg:pb-28">
   <div class="grid grid-cols-1 sm:grid-cols-3 container px-6 gap-8 md:gap-20 mx-auto">
-    <article class="max-md:text-center">
+    <article class="max-md:text-center track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">
       <img src="./img/icon1.avif" class="size-18 max-md:mx-auto mb-6 md:mb-12" />
       <h3 class="text-2xl mb-4">Expérience</h3>
-      <p class="text-slate-400">Le Groupe Vent Clair n'est pas seulement une entreprise de construction - nous sommes un collectif de visionnaires</p>
+      <p class="text-slate-400">Groupe Vent Clair n'est pas seulement une entreprise de construction - nous sommes un collectif de visionnaires</p>
     </article>
-    <article class="max-md:text-center">
+    <article class="max-md:text-center track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">
       <img src="./img/icon5.avif" class="size-18 max-md:mx-auto mb-6 md:mb-12" />
       <h3 class="text-2xl mb-4">Votre maison de rêve</h3>
-      <p class="text-slate-400">Au Groupe Vent Clair, nous croyons qu'une maison doit être un sanctuaire - un lieu où vous pouvez vraiment vous détendre</p>
+      <p class="text-slate-400">Chez Groupe Vent Clair, nous croyons qu'une maison doit être un sanctuaire - un lieu où vous pouvez vraiment vous détendre, vous ressourcer</p>
     </article>
-    <article class="max-md:text-center">
+    <article class="max-md:text-center track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">
       <img src="./img/icon2.avif" class="size-18 max-md:mx-auto mb-6 md:mb-12" />
       <h3 class="text-2xl mb-4">Créer le luxe</h3>
-      <p class="text-slate-400">Au cœur de la mission du Groupe Vent Clair se trouve une quête incessante de la perfection</p>
+      <p class="text-slate-400">Au cœur de la mission de Groupe Vent Clair se trouve une quête incessante de la perfection</p>
     </article>
   </div>
 </section>
 
-<section id="projects" class="py-16 md:py-28 bg-gradient-to-b from-slate-50 to-slate-100">
+<section id="projets" class="py-16 md:py-28 bg-gradient-to-b from-slate-50 to-slate-100">
   <div class="container mx-auto px-4 md:px-6">
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <div class="transition-all duration-1000 ease-out opacity-100 translate-y-0"><span class="text-slate-600 font-medium uppercase">Nos projets</span>
-        <h2 class="text-3xl md:text-4xl playfair-display-sc font-semibold text-slate-900 mt-2 mb-6">Une vitrine de notre travail</h2>
-        <p class="text-slate-700 leading-relaxed">Notre portfolio met en lumière les maisons que nous avons construites avec précision, créativité et soin. Chaque projet reflète notre engagement envers une construction de qualité, un design réfléchi et la satisfaction du client.</p>
+      <div class="transition-all duration-1000 ease-out opacity-100 translate-y-0">
+        <div class="relative text-slate-600 font-medium uppercase track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">Nos projets</div>
+        <h2 class="text-3xl md:text-4xl playfair-display-sc font-semibold text-slate-900 mt-2 mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">Une vitrine de notre travail</h2>
+        <p class="text-slate-700 leading-relaxed track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">Notre portfolio met en lumière les maisons que nous avons construites avec précision, créativité et soin. Chaque projet reflète notre engagement envers une construction de qualité, un design réfléchi et la satisfaction du client.</p>
       </div>
     </div>
   </div>
@@ -230,38 +232,20 @@
     <img loading="lazy" src="./img/portfolio/77.jpeg" />
     <img loading="lazy" src="./img/portfolio/78.jpeg" />
   </div>
-  <script>
-    const scrollContainer = document.querySelector('#carousel');
-
-    let scrollInterval;
-
-    function autoScroll() {
-      scrollInterval = setInterval(() => {
-        carousel.scrollLeft += 1;
-        if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
-          carousel.scrollLeft = 0;
-        }
-      }, 16); // ~60fps
-    }
-
-    carousel.addEventListener('mouseenter', () => clearInterval(scrollInterval));
-    carousel.addEventListener('mouseleave', autoScroll);
-
-    autoScroll();
-  </script>
 </section>
 
 <footer id="contact" class="bg-slate-900 text-white pt-16 pb-8">
   <div class="container mx-auto px-4 md:px-6">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
-      <div>
+      <div class="track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">
         <div class="flex items-center gap-2 mb-4">
           <img src="./img/logo-white.svg" alt="Logo" class="h-8 mr-2" />
           <span class="font-serif text-xl font-medium text-white">Groupe Ventclair</span>
         </div>
         <p class="text-slate-100 mb-6">Créer l'excellence architecturale grâce à l'innovation, l'artisanat et une compréhension profonde des besoins humains.</p>
       </div>
-      <div>
+
+      <div class=" track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">
         <h3 class="text-lg font-medium mb-4">Nous contacter</h3>
         <ul class="space-y-4">
           <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -283,13 +267,17 @@
         </ul>
       </div>
 
-      <div>
+      <div class=" track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">
         <ul class="space-y-2">
           <li><a href="#mission" class="text-slate-100 hover:text-gold-400 transition-colors">Mission</a></li>
-          <li><a href="#quality" class="text-slate-100 hover:text-gold-400 transition-colors">Qualité</a></li>
-          <li><a href="#art-of-detail" class="text-slate-100 hover:text-gold-400 transition-colors">Art du détail</a></li>
+          <li><a href="#qualite" class="text-slate-100 hover:text-gold-400 transition-colors">Qualité</a></li>
+          <li><a href="#art-du-detail" class="text-slate-100 hover:text-gold-400 transition-colors">Art du détail</a></li>
           <li><a href="#vision" class="text-slate-100 hover:text-gold-400 transition-colors">Vision</a></li>
-          <li><a href="#projects" class="text-slate-100 hover:text-gold-400 transition-colors">Projets</a></li>
+          <li><a
+//
+// Translation continues...
+
+<a href="#projets" class="text-slate-100 hover:text-gold-400 transition-colors">Projets</a></li>
           <li><a href="#contact" class="text-slate-100 hover:text-gold-400 transition-colors">Contact</a></li>
         </ul>
       </div>
@@ -300,3 +288,4 @@
     </div>
   </div>
 </footer>
+```
