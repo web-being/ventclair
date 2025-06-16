@@ -56,8 +56,30 @@
 
 a {
   text-underline-offset: 0.2em;
+
   &:hover {
     text-decoration: underline;
     text-decoration-thickness: 0.1em;
   }
 }
+
+@theme {
+  --animate-showcase: showcase 100s ease-in-out infinite;
+
+  @keyframes showcase {
+    0%,
+    100% {
+      object-position: bottom center;
+    }
+
+    25% {
+      object-position: bottom left;
+    }
+
+    75% {
+      object-position: bottom right;
+    }
+  }
+}
+
+@custom-variant visible (&:where(.visible, .visible *));
