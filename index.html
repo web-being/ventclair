@@ -27,7 +27,7 @@
 <section id="hero"
   class="flex flex-col relative bg-slate-700 min-h-[90vh] lg:h-screen text-white before:bg-linear-0 before:inset-x-0 before:h-full before:z-1 before:to-slate-900/80 before:from-slate-800/40 before:absolute before:opacity-90 before:bottom-0 group overflow-clip">
   <img src="./img/hero.avif" alt="Hero Image" class="absolute inset-0 w-full h-full animate-showcase object-cover group-hover:scale-110 origin-bottom ease-in-out duration-10800">
-  <nav class="nunito container px-6 mx-auto lg:absolute right-0 top-0 inset-x-0 text-amber-300 z-1 grid grid-cols-[1fr_min(27vw,13rem)_1fr] items-start mt-12 mb-24 duration-1000 delay-100 track-visible opacity-0 visible:opacity-100">
+  <nav class="nunito container px-6 mx-auto lg:absolute right-0 top-0 inset-x-0 text-amber-300 z-1 grid grid-cols-[1fr_min(27vw,13rem)_1fr] items-start mt-12 mb-24 duration-1000 delay-100 track-visible opacity-0 visible:opacity-100 -translate-y-6 visible:translate-y-0">
     <ul class="mt-6 gap-2 md:gap-4 lg:gap-12 uppercase tracking-[0.33ch] text-xs md:text-sm flex flex-col lg:flex-row *:inline-block lg:*:py-2 lg:justify-end">
       <li><a href="#mission">Mission</a></li>
       <li class="max-lg:hidden"><a href="#quality">Quality</a></li>
@@ -47,7 +47,7 @@
     </ul>
   </nav>
 
-  <div class="relative mt-auto z-2 container mx-auto px-4 md:px-6 pb-16 lg:pb-24 flex flex-col items-center track-visible duration-1080 opacity-0 visible:opacity-100">
+  <div class="relative mt-auto z-2 container mx-auto px-4 md:px-6 pb-16 lg:pb-24 flex flex-col items-center track-visible duration-1080 opacity-0 visible:opacity-100 translate-y-6 visible:translate-y-0">
     <!--
     <div class="language-switcher">
       <a href="?lang=en">EN</a> | <a href="?lang=fr">FR</a>
@@ -110,13 +110,13 @@
         <h3 class="text-lg tracking-wide font-semibold leading-none">Cozy Living</h3>
       </figcaption>
     </figure>
-    <figure class="duration-1080 hover:scale-102 track-visible translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">
+    <figure class="duration-1080 hover:scale-102 track-visible translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">
       <img src="./img/mission2.avif" alt="Mission Image" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
       <figcaption class="text-slate-500 hidden z-2 relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
         <h3 class="text-lg tracking-wide font-semibold leading-none">Refined Exteriors</h3>
       </figcaption>
     </figure>
-    <figure class="duration-1080 hover:scale-102 track-visible translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">
+    <figure class="duration-1080 hover:scale-102 track-visible translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-300">
       <img src="./img/mission3.avif" alt="Mission Image" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
       <figcaption class="text-slate-500 hidden z-2 relative rounded-b-xl bg-slate-900 pb-4 pt-3 border border-gray-800/40 shadow-xl">
         <h3 class="text-lg tracking-wide font-semibold leading-none">Timeless Style</h3>
@@ -179,29 +179,30 @@
   </div>
 </section>
 
-<!-- <section id="features" class="py-20 md:py-28 bg-gradient-to-b from-slate-50 to-slate-100">
-  <div class="container mx-auto px-4 md:px-6">
-    <article class="text-center max-w-3xl mx-auto mb-16"></article>
-
-  </div>
-</section> -->
 
 <section id="qualities" class="bg-slate-900 text-white pt-8 pb-16 md:pb-20 lg:pb-28">
   <div class="grid grid-cols-1 sm:grid-cols-3 container px-6 gap-8 md:gap-20 mx-auto">
-    <article class="max-md:text-center track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">
+    <article class="max-md:text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100">
       <img src="./img/icon1.avif" class="size-18 max-md:mx-auto mb-6 md:mb-12" />
-      <h3 class="text-2xl mb-4">Experience</h3>
-      <p class="text-slate-400">Ventclair Group is not just a construction company - we are a collective of visionaries</p>
+      <h3 class="text-2xl mb-4">On-time delivery</h3>
+      <p class="text-slate-400">
+        We guarantee your project will be delivered on schedule, because we value your time and trust.<br>
+        Our planning and execution ensure deadlines are met without compromising quality.
+      </p>
     </article>
-    <article class="max-md:text-center track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">
+    <article class="max-md:text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">
       <img src="./img/icon5.avif" class="size-18 max-md:mx-auto mb-6 md:mb-12" />
-      <h3 class="text-2xl mb-4">Your Dream House</h3>
-      <p class="text-slate-400">At Ventclair Group, we believe that a home should be a sanctuary - a place where you can truly relax, unwind</p>
+      <h3 class="text-2xl mb-4">Affordable Luxury</h3>
+      <p class="text-slate-400">Ventclair crafts elegant, durable homes with premium materials and masterful design — all at a price that respects your budget, proving that the luxury can be within reach.</p>
     </article>
-    <article class="max-md:text-center track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">
+    <article class="max-md:text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 delay-300">
       <img src="./img/icon2.avif" class="size-18 max-md:mx-auto mb-6 md:mb-12" />
-      <h3 class="text-2xl mb-4">Crafting Luxury</h3>
-      <p class="text-slate-400">At the heart of Ventclair Group's mission is a relentless pursuit of perfection</p>
+      <h3 class="text-2xl mb-4">Confidence that lasts</h3>
+      <p class="text-slate-400">We offer solid warranty coverage for your peace of mind:<br>
+        – 5-year warranty on the foundation and structural frame<br>
+        – Up to 15 years on the roofing system<br>
+        – Up to 10 years on the heat pump system
+      </p>
     </article>
   </div>
 </section>
