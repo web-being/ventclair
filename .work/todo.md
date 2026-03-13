@@ -42,6 +42,7 @@
 - [x] Bilingual support (EN/FR data in _projects/)
 - [ ] Touch swipe on mobile — verify
 - [ ] Visual polish pass
+- [ ] Admin panel
 
 ### Phase 3: Main site improvements
 - [x] Fix French version routing
