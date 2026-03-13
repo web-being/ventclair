@@ -3,6 +3,8 @@
 @source "./_layouts";
 @source "./_includes";
 @source "./_projects";
+@source "./*.html";
+@source "./fr";
 
 /* @font-face {
   font-family: 'GoldLines';

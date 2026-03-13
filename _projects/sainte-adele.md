@@ -1,28 +1,29 @@
 ---
 order: 3
 slug: sainte-adele
-year: 2020
 cover: 1
 images:
   - 1
 en:
-  title: "1770 Bd de Sainte-Adèle"
+  title: "Residential Multifamily Property – 6 Units"
   location: "Sainte-Adèle, QC"
+  address: "1770 boul de Sainte-Adèle, Sainte-Adèle, QC J8B 0K2"
   type: "Multifamily Residential"
-  description: "Six-unit residential building in a quiet natural setting. Practical layouts with outdoor parking, providing comfortable living in a calm environment surrounded by natural landscapes."
+  description: "This residential multifamily property is part of our real estate portfolio in Sainte-Adèle. The building includes six residential units and is located in a quiet area surrounded by natural landscapes. The property features practical layouts and outdoor parking for residents. The building provides a comfortable residential environment in a calm setting."
   specs:
-    Units: "6"
+    Property Type: "Multifamily Residential"
+    Units: "6 Apartments"
     Floors: "3"
-    Parking: "Outdoor"
-    Year: "2020"
+    Parking: "Outdoor parking"
 fr:
-  title: "1770 Bd de Sainte-Adèle"
+  title: "Immeuble résidentiel multifamilial – 6 logements"
   location: "Sainte-Adèle, QC"
+  address: "1770 boul de Sainte-Adèle, Sainte-Adèle, QC J8B 0K2"
   type: "Résidentiel multifamilial"
-  description: "Immeuble résidentiel de six logements dans un cadre naturel paisible. Espaces fonctionnels avec stationnement extérieur, offrant un cadre de vie confortable dans un environnement calme."
+  description: "Cet immeuble résidentiel multifamilial fait partie de notre portefeuille immobilier à Sainte-Adèle. Le bâtiment comprend six logements résidentiels et est situé dans un secteur calme entouré d'un environnement naturel. La propriété offre des espaces fonctionnels ainsi qu'un stationnement extérieur pour les résidents. L'immeuble propose un cadre de vie confortable dans un environnement paisible."
   specs:
-    Logements: "6"
+    Type de propriété: "Résidentiel multifamilial"
+    Logements: "6 appartements"
     Étages: "3"
-    Stationnement: "Extérieur"
-    Année: "2020"
+    Stationnement: "Stationnement extérieur"
 ---
