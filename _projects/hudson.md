@@ -29,10 +29,10 @@ en:
   title: "Luxury Residential Home"
   location: "Hudson, QC"
   address: "Hudson, QC"
-  type: "Residential Home"
+  type: "Single-family Home"
   description: "This contemporary luxury residence features a modern architectural design with spacious interior layouts and large windows that provide natural light throughout the home. The property includes an open-concept kitchen with custom cabinetry, a large central island, and a secondary preparation kitchen. Interior spaces are finished with large-format tile flooring, modern lighting fixtures, and glass stair railings. The home also features multiple bathrooms with walk-in glass showers and contemporary finishes. The property includes a large driveway, landscaped grounds, and extensive outdoor space surrounding the residence."
   specs:
-    Property Type: "Residential Home"
+    Property Type: "Single-family Home"
     Levels: "2 floors + fully finished basement"
     Total Living Space: "4,465.98 sq ft"
     Bedrooms: "6"
