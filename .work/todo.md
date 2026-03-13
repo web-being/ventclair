@@ -17,16 +17,6 @@
 - **Target**: upper-middle Montreal families ($800K-1.5M budget) who want marble/walnut/designer but can't afford boutique firms
 - **Identity**: luxury home builder (fixed)
 
-### Website problems (status)
-1. ~~One project shown as many~~ — fixed: 3 separate project cards
-2. ~~No project structure~~ — fixed: structured portfolio with sliders
-3. ~~No social proof~~ — partial: process timeline added, testimonials/team still placeholder-needed
-4. ~~No pricing signals~~ — fixed: budget range in form, "accessible luxury" messaging
-5. ~~No lead capture form~~ — fixed: consultation form with name/email/phone/type/budget/message
-6. ~~French route broken~~ — fixed: /fr/ works
-7. Gmail contact for a luxury brand — **not fixable via code** (recommend info@groupeventclair.com)
-8. ~~Warranty section buried~~ — fixed: moved to first position in qualities grid
-
 ### Success metrics
 | Timeframe | Goal | Metric |
 |-----------|------|--------|
