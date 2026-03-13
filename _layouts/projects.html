@@ -35,15 +35,15 @@ layout: default
             {% endfor %}
           </div>
           {% if multi %}
-          <button class="slider-prev absolute left-3 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-slate-900/70 backdrop-blur-sm border border-slate-700/50 flex items-center justify-center text-white hover:bg-slate-800/90 transition-colors" aria-label="{% if lang == 'fr' %}Pr&eacute;c&eacute;dent{% else %}Previous{% endif %}">
+          <button class="slider-prev absolute left-3 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-slate-900/70 backdrop-blur-sm border border-slate-700/50 flex items-center justify-center text-white hover:bg-slate-800/90 focus-visible:outline-2 focus-visible:outline-amber-300 focus-visible:outline-offset-2 transition-colors" aria-label="{% if lang == 'fr' %}Pr&eacute;c&eacute;dent{% else %}Previous{% endif %}">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
           </button>
-          <button class="slider-next absolute right-3 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-slate-900/70 backdrop-blur-sm border border-slate-700/50 flex items-center justify-center text-white hover:bg-slate-800/90 transition-colors" aria-label="{% if lang == 'fr' %}Suivant{% else %}Next{% endif %}">
+          <button class="slider-next absolute right-3 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-slate-900/70 backdrop-blur-sm border border-slate-700/50 flex items-center justify-center text-white hover:bg-slate-800/90 focus-visible:outline-2 focus-visible:outline-amber-300 focus-visible:outline-offset-2 transition-colors" aria-label="{% if lang == 'fr' %}Suivant{% else %}Next{% endif %}">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
           </button>
           <div class="slider-dots absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex gap-1.5">
             {% for img in imgs %}
-            <button class="w-2 h-2 rounded-full transition-all duration-300 {% if forloop.first %}bg-white w-6{% else %}bg-white/40 hover:bg-white/60{% endif %}" data-dot="{{ forloop.index0 }}" aria-label="{% if lang == 'fr' %}Diapositive{% else %}Slide{% endif %} {{ forloop.index }}"></button>
+            <button class="relative w-2 h-2 rounded-full transition-all duration-300 {% if forloop.first %}bg-white w-6{% else %}bg-white/40 hover:bg-white/60{% endif %} before:absolute before:-inset-4 before:content-['']" data-dot="{{ forloop.index0 }}" aria-label="{% if lang == 'fr' %}Diapositive{% else %}Slide{% endif %} {{ forloop.index }}"></button>
             {% endfor %}
           </div>
           <div class="absolute top-4 right-4 z-10 bg-slate-900/70 backdrop-blur-sm rounded-full px-3 py-1 text-xs text-slate-300 border border-slate-700/50">
