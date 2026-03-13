@@ -1,30 +1,31 @@
 ## Business Analysis
 
 ### Current state
-- Static site: index.html (EN) + fr.html (FR link exists but `/fr` route broken, fr.html at root)
-- Tailwind v4, no build framework, no SSG, no CMS
-- 3 projects in portfolio.md (bilingual data ready):
-  1. **Hudson luxury home** — 78 photos (img/portfolio/1/), 6bed/6bath, 4466sqft, 2022
-  2. **Lachute 16-unit complex** — 1 photo (img/portfolio/2/), 2 buildings, 2020
-  3. **Sainte-Adele 6-unit** — 1 photo (img/portfolio/3/), 3 floors
-- Portfolio currently: flat carousel of 78 images (all from project 1), no labels, no project separation
-- No lead capture, no CMS, gmail contact, no social proof
+- Static site: index.html (EN) + fr/index.html (FR) — Jekyll 4.3 with `_projects/` collection
+- Tailwind v4, `@source` directives for class scanning
+- 3 projects in `_projects/` (bilingual YAML front matter):
+  1. **Hudson luxury home** — 21 photos, 6bed/6bath, 4466sqft, 2022
+  2. **Lachute 16-unit complex** — 1 photo, 2 buildings, 2020
+  3. **Sainte-Adèle 6-unit** — 1 photo, 3 floors
+- Portfolio: structured project cards with image sliders, specs, descriptions
+- Lead capture form added, process timeline added
+- Identity: "luxury home builder" (consistent across EN/FR)
 
 ### Competitive positioning
 - **Moat**: direct-import premium materials from China at wholesale
 - **Niche**: "Accessible luxury" — premium finishes at sub-market pricing
 - **Target**: upper-middle Montreal families ($800K-1.5M budget) who want marble/walnut/designer but can't afford boutique firms
-- **Identity to fix**: site says "luxury real estate agency" / "construction" / "architectural masterpiece" — pick one: **luxury home builder**
+- **Identity**: luxury home builder (fixed)
 
-### Website problems
-1. One project shown as many (78 photos, no context) — erodes trust
-2. No project structure — just a scrolling image strip
-3. No social proof (testimonials, team, process)
-4. No pricing signals — "accessible luxury" unanchored
-5. No lead capture form
-6. French route broken
-7. Gmail contact for a luxury brand
-8. Warranty section (strong content) buried at bottom
+### Website problems (status)
+1. ~~One project shown as many~~ — fixed: 3 separate project cards
+2. ~~No project structure~~ — fixed: structured portfolio with sliders
+3. ~~No social proof~~ — partial: process timeline added, testimonials/team still placeholder-needed
+4. ~~No pricing signals~~ — fixed: budget range in form, "accessible luxury" messaging
+5. ~~No lead capture form~~ — fixed: consultation form with name/email/phone/type/budget/message
+6. ~~French route broken~~ — fixed: /fr/ works
+7. Gmail contact for a luxury brand — **not fixable via code** (recommend info@groupeventclair.com)
+8. ~~Warranty section buried~~ — fixed: moved to first position in qualities grid
 
 ### Success metrics
 | Timeframe | Goal | Metric |
@@ -38,40 +39,44 @@
 
 ## Phases
 
-### Phase 1: Portfolio page + project cards (current)
+### Phase 1: Portfolio page + project cards
 - [x] Create `/projects` page (projects.html) with 3 project cards
 - [x] Each card: hero image, title, location, type badge, key specs (beds/baths/sqft or units)
 - [x] Project detail: image slider with arrows/dots/counter, description, specs table
-- [x] Project 1 (Hudson): curated 14 best photos for slider
+- [x] Project 1 (Hudson): curated 21 photos for slider
 - [x] Projects 2-3: single image each (what's available)
-- [x] Data-driven from projects.json so owner can edit
+- [x] Data-driven from _projects/ YAML so owner can edit
 - [x] Link from main site portfolio section → /projects
 - [x] Featured cards on index.html (3 portrait cards with gradient overlay)
 - [x] Removed old flat 78-image carousel
-- [x] Bilingual support (EN/FR data in projects.json)
+- [x] Bilingual support (EN/FR data in _projects/)
 - [ ] Touch swipe on mobile — verify
 - [ ] Visual polish pass
 
 ### Phase 3: Main site improvements
-- [ ] Fix French version routing
-- [ ] Replace flat carousel on index.html with link to /projects + 3 featured cards
-- [ ] Add lead capture form (name, email, phone, project type, budget range)
-- [ ] Add "Get a Free Consultation" CTA
-- [ ] Professional email domain note (recommend info@groupeventclair.com)
+- [x] Fix French version routing
+- [x] Replace flat carousel on index.html with link to /projects + 3 featured cards
+- [x] Add lead capture form (name, email, phone, project type, budget range)
+- [x] Add "Get a Free Consultation" CTA
+- [x] Fix identity: "luxury real estate agency" → "luxury home builder" (EN + FR)
+- [x] Fix meta descriptions to match positioning (EN + FR)
+- [ ] Professional email domain note (recommend info@groupeventclair.com) — owner action, not code
 
 ### Phase 4: Trust & conversion
 - [ ] Testimonials section (placeholder structure, owner fills in)
 - [ ] Team/founder section with photo
-- [ ] Process timeline (design → build → deliver)
-- [ ] Move warranty section higher, make it more prominent
+- [x] Process timeline (consultation → design → build → deliver)
+- [x] Move warranty section higher, make it more prominent
 - [ ] Before/after or construction progress section
 
 ### Phase 5: Marketing foundations
-- [ ] Google My Business setup guidance
-- [ ] Houzz profile recommendation
-- [ ] Instagram content strategy (weekly progress posts)
-- [ ] SEO: proper meta tags, structured data for local business
-- [ ] Analytics goals setup in existing GA4
+- [ ] Google My Business setup guidance — owner action
+- [ ] Houzz profile recommendation — owner action
+- [ ] Instagram content strategy (weekly progress posts) — owner action
+- [x] SEO: proper meta tags, structured data for local business (JSON-LD HomeAndConstructionBusiness)
+- [x] SEO: hreflang alternate links, Open Graph meta tags
+- [ ] Analytics goals setup in existing GA4 — owner action
+- [ ] Formspree form endpoint setup — owner action (currently placeholder URL)
 
 ---
 
