@@ -60,7 +60,7 @@
 - [x] Add "Get a Free Consultation" CTA
 - [x] Fix identity: "luxury real estate agency" → "luxury home builder" (EN + FR)
 - [x] Fix meta descriptions to match positioning (EN + FR)
-- [ ] Professional email domain note (recommend info@groupeventclair.com) — owner action, not code
+- [x] Professional email domain note (recommend info@groupeventclair.com) — owner action, not code
 
 ### Phase 4: Trust & conversion
 - [ ] Testimonials section (placeholder structure, owner fills in)
