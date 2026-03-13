@@ -63,6 +63,7 @@
 - [x] Professional email domain note (recommend info@groupeventclair.com) — owner action, not code
 
 ### Phase 4: Trust & conversion
+- [ ] Price signal
 - [ ] Testimonials section (placeholder structure, owner fills in)
 - [ ] Team/founder section with photo
 - [x] Process timeline (consultation → design → build → deliver)
