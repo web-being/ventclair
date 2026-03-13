@@ -1,0 +1,31 @@
+<script>
+  document.querySelectorAll('[data-slider]').forEach(card => {
+    const track = card.querySelector('.slider-track');
+    const dots = card.querySelectorAll('[data-dot]');
+    const counter = card.querySelector('.slider-counter');
+    const total = parseInt(card.dataset.slider);
+    if (total <= 1) return;
+
+    function goTo(i) {
+      const c = ((i % total) + total) % total;
+      track.style.transform = 'translateX(-' + (c * 100) + '%)';
+      track.dataset.current = c;
+      counter.textContent = c + 1;
+      dots.forEach(function(d, di) {
+        d.className = 'w-2 h-2 rounded-full transition-all duration-300 ' + (di === c ? 'bg-white w-6' : 'bg-white/40 hover:bg-white/60');
+      });
+    }
+
+    card.querySelector('.slider-prev').addEventListener('click', function() { goTo(parseInt(track.dataset.current) - 1); });
+    card.querySelector('.slider-next').addEventListener('click', function() { goTo(parseInt(track.dataset.current) + 1); });
+    dots.forEach(function(d) { d.addEventListener('click', function() { goTo(parseInt(d.dataset.dot)); }); });
+
+    var startX = 0;
+    var area = track.parentElement;
+    area.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, { passive: true });
+    area.addEventListener('touchend', function(e) {
+      var diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) goTo(parseInt(track.dataset.current) + (diff > 0 ? 1 : -1));
+    });
+  });
+</script>

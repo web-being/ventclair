@@ -1,0 +1,81 @@
+---
+layout: default
+---
+<script src="{{ page.base }}script.js?1" defer></script>
+
+<div class="relative overflow-hidden">
+  <!-- Glow — matches home mission section colors -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60rem] h-[30rem] bg-radial-[at_50%_0%] from-blue-400/20 via-indigo-500/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+
+  {% include nav-projects.html %}
+
+  <header class="relative container mx-auto px-4 md:px-6 pt-8 pb-10 text-center">
+    <p class="text-amber-200/80 uppercase tracking-[0.3ch] text-sm mb-3 track-visible duration-1000 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">{% if page.lang == 'fr' %}Notre Portfolio{% else %}Our Portfolio{% endif %}</p>
+    <h1 class="playfair-display-sc font-semibold text-4xl md:text-5xl lg:text-6xl tracking-wide track-visible duration-1000 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">{% if page.lang == 'fr' %}Projets en vedette{% else %}Featured Projects{% endif %}</h1>
+    <p class="mt-6 text-slate-400 text-lg max-w-2xl mx-auto track-visible duration-1000 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">{% if page.lang == 'fr' %}Chaque projet refl&egrave;te notre engagement envers la qualit&eacute; de construction, le design soign&eacute; et la satisfaction du client.{% else %}Each project reflects our commitment to quality construction, thoughtful design, and client satisfaction.{% endif %}</p>
+  </header>
+</div>
+
+<main class="container mx-auto px-4 md:px-6 pb-24 space-y-8 lg:space-y-12">
+  {% assign lang = page.lang | default: 'en' %}
+  {% assign projects = site.projects | sort: 'order' %}
+  {% for proj in projects %}
+    {% if lang == 'fr' %}{% assign data = proj.fr %}{% else %}{% assign data = proj.en %}{% endif %}
+    {% assign imgs = proj.images %}
+    {% assign multi = false %}{% if imgs.size > 1 %}{% assign multi = true %}{% endif %}
+    {% assign even = true %}{% assign mod = forloop.index0 | modulo: 2 %}{% if mod == 1 %}{% assign even = false %}{% endif %}
+
+    <article class="track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 group relative bg-slate-900 rounded-2xl overflow-hidden border border-slate-800/60 hover:border-slate-700/80 transition-colors" {% if multi %}data-slider="{{ imgs.size }}"{% endif %} id="{{ proj.slug }}">
+      <div class="flex flex-col lg:flex-row {% unless even %}lg:flex-row-reverse{% endunless %}">
+        <!-- Slider -->
+        <div class="relative lg:w-3/5 aspect-[4/3] lg:aspect-auto lg:min-h-[28rem] overflow-hidden bg-slate-800 shrink-0">
+          <div class="slider-track flex h-full transition-transform duration-500 ease-out" data-current="0">
+            {% for img in imgs %}
+            <img src="{{ page.base }}img/portfolio/{{ proj.slug }}/{{ img }}.webp" alt="{{ data.title }}" class="w-full h-full object-cover shrink-0" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
+            {% endfor %}
+          </div>
+          {% if multi %}
+          <button class="slider-prev absolute left-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-slate-900/70 backdrop-blur-sm border border-slate-700/50 flex items-center justify-center text-white hover:bg-slate-800/90 transition-colors" aria-label="{% if lang == 'fr' %}Pr&eacute;c&eacute;dent{% else %}Previous{% endif %}">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button class="slider-next absolute right-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-slate-900/70 backdrop-blur-sm border border-slate-700/50 flex items-center justify-center text-white hover:bg-slate-800/90 transition-colors" aria-label="{% if lang == 'fr' %}Suivant{% else %}Next{% endif %}">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+          <div class="slider-dots absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex gap-1.5">
+            {% for img in imgs %}
+            <button class="w-2 h-2 rounded-full transition-all duration-300 {% if forloop.first %}bg-white w-6{% else %}bg-white/40 hover:bg-white/60{% endif %}" data-dot="{{ forloop.index0 }}" aria-label="{% if lang == 'fr' %}Diapositive{% else %}Slide{% endif %} {{ forloop.index }}"></button>
+            {% endfor %}
+          </div>
+          <div class="absolute top-4 right-4 z-10 bg-slate-900/70 backdrop-blur-sm rounded-full px-3 py-1 text-xs text-slate-300 border border-slate-700/50">
+            <span class="slider-counter">1</span> / {{ imgs.size }}
+          </div>
+          {% endif %}
+          <div class="absolute top-4 left-4 z-10">
+            <span class="bg-amber-200/90 text-slate-900 text-xs font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full">{{ data.type }}</span>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="lg:w-2/5 p-6 md:p-8 lg:p-10 flex flex-col justify-center">
+          <div class="flex items-center gap-2 text-slate-400 text-sm mb-3">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            {{ data.location }}
+          </div>
+          <h2 class="playfair-display-sc font-semibold text-2xl md:text-3xl tracking-wide mb-4">{{ data.title }}</h2>
+          <p class="text-slate-400 leading-relaxed mb-8">{{ data.description }}</p>
+          <div class="grid grid-cols-2 gap-x-6 gap-y-3">
+            {% for spec in data.specs %}
+            <div class="flex justify-between items-baseline border-b border-slate-800/60 pb-2">
+              <span class="text-slate-500 text-sm">{{ spec[0] }}</span>
+              <span class="text-slate-200 font-medium text-sm">{{ spec[1] }}</span>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</main>
+
+{% include footer-home.html footer_class="border-t border-slate-800" %}
+{% include projects-script.html %}

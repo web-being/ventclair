@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@source "./_layouts";
+@source "./_includes";
+@source "./_projects";
+
 /* @font-face {
   font-family: 'GoldLines';
   src: url('./fonts/GoldLinesSerif.otf') format('opentype');

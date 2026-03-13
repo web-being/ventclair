@@ -1,0 +1,18 @@
+{% assign lang = page.lang | default: 'en' %}
+{% assign projects = site.projects | sort: 'order' %}
+<div class="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
+  {% for proj in projects %}
+    {% if lang == 'fr' %}{% assign data = proj.fr %}{% else %}{% assign data = proj.en %}{% endif %}
+    {% assign projPage = page.base | append: 'projects.html' %}
+    {% if lang == 'fr' %}{% assign projPage = page.base | append: 'fr/projects.html' %}{% endif %}
+    <a href="{{ projPage }}#{{ proj.slug }}" class="group relative rounded-xl overflow-hidden aspect-[3/4] block">
+      <img src="{{ page.base }}img/portfolio/{{ proj.slug }}/{{ proj.cover }}.webp" alt="{{ data.title }}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+      <div class="absolute bottom-0 inset-x-0 p-5 md:p-6 text-white">
+        <span class="text-amber-300/90 text-xs uppercase tracking-wider font-medium">{{ data.type }}</span>
+        <h3 class="playfair-display-sc text-xl md:text-2xl font-semibold mt-1 tracking-wide">{{ data.title }}</h3>
+        <p class="text-slate-300 text-sm mt-1">{{ data.location }}</p>
+      </div>
+    </a>
+  {% endfor %}
+</div>

@@ -4,7 +4,9 @@
     "tailwindcss": "^4.1.7"
   },
   "scripts": {
-    "start": "npx @tailwindcss/cli -i ./_style.css -o ./style.css --watch",
-    "build": "tailwindcss -i ./input.css -o ./style.css --minify"
+    "start": "npx @tailwindcss/cli -i ./_style.css -o ./style.css --watch & bundle exec jekyll serve --livereload --port ${PORT:-4000}",
+    "css": "npx @tailwindcss/cli -i ./_style.css -o ./style.css --watch",
+    "serve": "bundle exec jekyll serve --livereload",
+    "build": "npx @tailwindcss/cli -i ./_style.css -o ./style.css --minify && bundle exec jekyll build"
   }
 }

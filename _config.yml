@@ -1,0 +1,19 @@
+collections:
+  projects:
+    output: false
+    sort_by: order
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - _style.css
+  - .work
+  - fonts
+  - "Screenshot*"
+
+keep_files:
+  - img
+  - style.css
