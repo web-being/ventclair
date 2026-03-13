@@ -24,7 +24,7 @@
 
       <div class="track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">
         <h3 class="text-lg font-medium mb-4">{% if page.lang == 'fr' %}Navigation{% else %}Navigation{% endif %}</h3>
-        <ul class="space-y-2">
+        <ul class="grid grid-cols-2 gap-x-6 gap-y-2">
           {% assign home = page.base %}
           {% if page.lang == 'fr' %}{% assign home = page.base | append: 'fr/' %}{% endif %}
           {% if page.lang == 'fr' %}
