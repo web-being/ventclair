@@ -51,7 +51,7 @@
     </div>
     <div class="border-t border-slate-800 my-8"></div>
     <div class="flex flex-col md:flex-row justify-between items-center">
-      <p class="text-slate-200 text-sm">&copy; 2025 Groupe Ventclair. {% if page.lang == 'fr' %}Tous droits r&eacute;serv&eacute;s.{% else %}All rights reserved.{% endif %}</p>
+      <p class="text-slate-200 text-sm">&copy; {{ 'now' | date: '%Y' }} Groupe Ventclair. {% if page.lang == 'fr' %}Tous droits r&eacute;serv&eacute;s.{% else %}All rights reserved.{% endif %}</p>
     </div>
   </div>
 </footer>
