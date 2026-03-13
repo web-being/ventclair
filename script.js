@@ -1,16 +1,12 @@
-const callback = function (entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    } else {
-      entry.target.classList.remove("visible");
-    }
+var prefersReduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+var observer = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    entry.target.classList.toggle("visible", entry.isIntersecting);
   });
-};
+}, { threshold: 0.1 });
 
-const observer = new IntersectionObserver(callback);
-
-const targets = document.querySelectorAll(".track-visible");
-targets.forEach(function (target) {
-  observer.observe(target);
+document.querySelectorAll(".track-visible").forEach(function (el) {
+  if (prefersReduced) el.classList.add("visible");
+  else observer.observe(el);
 });
