@@ -52,15 +52,6 @@
 - [ ] Touch swipe on mobile — verify
 - [ ] Visual polish pass
 
-**Design direction**: Premium cards (like Sobha reference) — large hero image with slider inside card, gold/dark accents matching existing site palette. Not a flat grid. Each card is a statement.
-
-### Phase 2: Simple CMS backend
-- [ ] Admin page for editing project data (title, description, specs, images)
-- [ ] Admin page for site-wide settings (phone, email, tagline, social links)
-- [ ] Flat-file storage (JSON or markdown) — no database needed
-- [ ] Image upload handling
-- [ ] Auth (simple password gate)
-
 ### Phase 3: Main site improvements
 - [ ] Fix French version routing
 - [ ] Replace flat carousel on index.html with link to /projects + 3 featured cards
