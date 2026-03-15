@@ -1,6 +1,7 @@
 ---
 order: 3
 slug: sainte-adele
+year: 2023
 cover: img/portfolio/sainte-adele/1.webp
 images:
   - img/portfolio/sainte-adele/1.webp
