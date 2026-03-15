@@ -24,7 +24,7 @@ fr:
   title: Immeuble résidentiel multifamilial – 6 logements
   location: Sainte-Adèle, QC
   address: 1770 boul de Sainte-Adèle, Sainte-Adèle, QC J8B 0K2
-  type: Multifamily Residential
+  type: Résidentiel multifamilial
   description: Cet immeuble résidentiel multifamilial fait partie de notre
     portefeuille immobilier à Sainte-Adèle. Le bâtiment comprend six logements
     résidentiels et est situé dans un secteur calme entouré d'un environnement
