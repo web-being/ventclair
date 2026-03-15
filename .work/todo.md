@@ -40,9 +40,9 @@
 - [x] Featured cards on index.html (3 portrait cards with gradient overlay)
 - [x] Removed old flat 78-image carousel
 - [x] Bilingual support (EN/FR data in _projects/)
-- [ ] Touch swipe on mobile — verify
-- [ ] Visual polish pass
-- [ ] Admin panel
+- [x] Touch swipe on mobile — verify
+- [x] Visual polish pass
+- [x] Admin panel
 
 ### Phase 3: Main site improvements
 - [x] Fix French version routing
@@ -57,9 +57,9 @@
 - [ ] Price signal
 - [ ] Testimonials section (placeholder structure, owner fills in)
 - [ ] Team/founder section with photo
+- [ ] Before/after or construction progress section
 - [x] Process timeline (consultation → design → build → deliver)
 - [x] Move warranty section higher, make it more prominent
-- [ ] Before/after or construction progress section
 
 ### Phase 5: Marketing foundations
 - [ ] Google My Business setup guidance — owner action
