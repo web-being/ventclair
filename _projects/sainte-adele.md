@@ -36,4 +36,5 @@ fr:
     Logements: 6 appartements
     Étages: 3
     Stationnement: Stationnement extérieur
+    Année de construction: 2023
 ---
