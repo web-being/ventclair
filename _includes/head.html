@@ -24,19 +24,19 @@
 {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
-  "name": "Groupe Ventclair",
+  "name": "{{ site.title }}",
   "url": "https://groupeventclair.com",
   "logo": "https://groupeventclair.com/img/logo.avif",
   "image": "https://groupeventclair.com/img/hero.avif",
-  "description": "Luxury home builder in Montreal. Premium materials, expert craftsmanship, accessible pricing.",
-  "telephone": "+18888898335",
-  "email": "info@groupeventclair.com",
+  "description": "{{ site.description }}",
+  "telephone": "{{ site.phone | replace: ' ', '' | replace: '(', '' | replace: ')', '' | replace: '-', '' }}",
+  "email": "{{ site.email }}",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "404-5500 avenue Adalbert",
-    "addressLocality": "Montréal",
-    "addressRegion": "QC",
-    "postalCode": "H4W2A9",
+    "streetAddress": "{{ site.address.street }}",
+    "addressLocality": "{{ site.address.city }}",
+    "addressRegion": "{{ site.address.province }}",
+    "postalCode": "{{ site.address.postal }}",
     "addressCountry": "CA"
   },
   "geo": {
@@ -52,8 +52,8 @@
   "priceRange": "$$$$",
   "openingHours": "Mo-Fr 09:00-17:00",
   "sameAs": [
-    "https://www.facebook.com/people/Groupe-Ventclair/61578005243465/",
-    "https://www.instagram.com/groupe_ventclair/"
+    "{{ site.social.facebook }}",
+    "{{ site.social.instagram }}"
   ]
 }
 </script>

@@ -68,7 +68,7 @@
 - [x] SEO: proper meta tags, structured data for local business (JSON-LD HomeAndConstructionBusiness)
 - [x] SEO: hreflang alternate links, Open Graph meta tags
 - [ ] Analytics goals setup in existing GA4 — owner action
-- [ ] Formspree form endpoint setup — owner action (currently placeholder URL)
+- [x] Formspree form endpoint setup — owner action (currently placeholder URL)
 
 ---
 

@@ -1,0 +1,117 @@
+settings:
+  hide: true
+  content:
+    merge: false
+
+components:
+  spec:
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: "{fields.key}: {fields.value}"
+    fields:
+      - name: key
+        label: Label
+        type: string
+      - name: value
+        label: Value
+        type: string
+
+  locale:
+    type: object
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: location
+        label: Location
+        type: string
+      - name: address
+        label: Address
+        type: string
+      - name: type
+        label: Type
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: specs
+        label: Specs
+        component: spec
+
+content:
+  - name: info
+    label: Site Info
+    path: _config.yml
+    type: file
+    fields:
+      - name: title
+        label: Company Name
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: phone
+        label: Phone
+        type: string
+      - name: email
+        label: Email
+        type: string
+      - name: address
+        label: Address
+        type: object
+        fields:
+          - name: street
+            label: Street
+            type: string
+          - name: city
+            label: City
+            type: string
+          - name: province
+            label: Province
+            type: string
+          - name: postal
+            label: Postal Code
+            type: string
+      - name: social
+        label: Social Links
+        type: object
+        fields:
+          - name: facebook
+            label: Facebook
+            type: string
+          - name: instagram
+            label: Instagram
+            type: string
+
+  - name: projects
+    label: Projects
+    path: _projects
+    type: collection
+    view:
+      fields: [slug, year, order]
+      sort: [order]
+    fields:
+      - name: order
+        label: Display Order
+        type: number
+      - name: slug
+        label: Slug
+        type: string
+      - name: year
+        label: Year
+        type: number
+      - name: cover
+        label: Cover Image #
+        type: number
+      - name: images
+        label: Image Numbers
+        type: number
+        list: true
+      - name: en
+        label: English
+        component: locale
+      - name: fr
+        label: French
+        component: locale
