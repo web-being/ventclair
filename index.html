@@ -6,11 +6,14 @@ lang: en
 base: "./"
 body_class: ""
 ---
+{% assign lang = page.lang | default: 'en' %}
+{% assign home = site.data.home %}
 <script src="./script.js?1" defer></script>
 
+{% assign d = home.hero[lang] %}
 <section id="hero"
   class="flex flex-col relative bg-slate-700 min-h-[90vh] lg:h-screen text-white before:bg-linear-0 before:inset-x-0 before:h-full before:z-1 before:to-slate-900/80 before:from-slate-800/40 before:absolute before:opacity-90 before:bottom-0 group overflow-clip">
-  <img src="./img/hero.avif" alt="Luxury home exterior showcasing Ventclair craftsmanship" class="absolute inset-0 w-full h-full animate-showcase object-cover group-hover:scale-110 origin-bottom ease-in-out duration-10800">
+  <img src="{{ page.base }}{{ home.hero.image }}" alt="{{ d.heading }}" class="absolute inset-0 w-full h-full animate-showcase object-cover group-hover:scale-110 origin-bottom ease-in-out duration-10800">
   <nav class="nunito container px-6 mx-auto lg:absolute right-0 top-0 inset-x-0 text-amber-300 z-1 grid grid-cols-[1fr_min(27vw,13rem)_1fr] items-start mt-12 mb-24 duration-1000 delay-100 track-visible opacity-0 visible:opacity-100 -translate-y-6 visible:translate-y-0">
     <ul class="mt-6 gap-2 md:gap-4 lg:gap-12 uppercase tracking-[0.33ch] text-xs md:text-sm flex flex-col lg:flex-row *:inline-block lg:*:py-2 lg:justify-end">
       <li><a href="#mission" class="focus-visible:outline-2 focus-visible:outline-amber-300 focus-visible:outline-offset-2 rounded">Mission</a></li>
@@ -30,130 +33,102 @@ body_class: ""
 
   <div class="relative mt-auto z-2 container mx-auto px-4 md:px-6 pb-16 lg:pb-24 flex flex-col items-center track-visible duration-1080 opacity-0 visible:opacity-100 translate-y-6 visible:translate-y-0">
     <h1 class="relative playfair-display-sc font-semibold self-center text-center text-4xl md:text-6xl lg:text-7xl leading-none tracking-wide max-w-240 text-shadow-lg duration-1080 -translate-y-5 visible:translate-y-0 scale-98 visible:scale-100">
-      Luxury Construction
+      {{ d.heading }}
     </h1>
     <p class="mt-6 self-center text-center text-lg max-w-200 text-slate-200/90 duration-1080 -translate-y-2 visible:translate-y-0 scale-98 visible:scale-100">
-      Groupe Ventclair is a luxury home builder based in Montreal, Canada.<br>
-      Premium materials, expert craftsmanship, and accessible pricing for discerning clients.
+      {{ d.text }}
     </p>
     <div class="mt-8 flex flex-col sm:flex-row gap-4 items-center translate-y-5 visible:translate-y-0 scale-98 visible:scale-100">
       <a class="bg-slate-900/70 backdrop-blur-sm text-slate-200 px-6 py-4 transition-colors duration-200 ease-in-out cursor-pointer text-lg font-semibold rounded-full border border-slate-800 hover:bg-slate-800/70 hover:border-slate-700/70 focus-visible:outline-2 focus-visible:outline-amber-300 focus-visible:outline-offset-2 no-underline!"
-        href="#projects">Explore Portfolio</a>
+        href="#projects">{{ d.cta1 }}</a>
       <a class="text-amber-200/90 px-6 py-4 text-lg font-semibold rounded-full border border-amber-200/30 hover:bg-amber-200/10 hover:border-amber-200/50 focus-visible:outline-2 focus-visible:outline-amber-300 focus-visible:outline-offset-2 no-underline! transition-colors duration-200"
-        href="#consultation">Get a Free Quote</a>
+        href="#consultation">{{ d.cta2 }}</a>
     </div>
   </div>
 </section>
 
+{% assign d = home.mission[lang] %}
 <section id="mission" class="bg-slate-900 text-slate-100 text-center py-16 md:py-20 lg:py-28 bg-radial-[at_50%_75%] from-blue-400/20 via-indigo-500/5 to-transparent to-90%">
   <header class="container mx-auto px-4 md:px-6">
-    <p class="text-sm uppercase tracking-[0.3ch] text-amber-200/90 mb-4 track-visible duration-1000 translate-y-4 visible:translate-y-0 scale-98 visible:scale-100 opacity-0 visible:opacity-100">Our mission</p>
-    <h2 class="playfair-display-sc font-semibold text-3xl md:text-5xl track-visible duration-1000 translate-y-4 visible:translate-y-0 scale-98 visible:scale-100 opacity-0 visible:opacity-100">Building Excellence</h2>
+    <p class="text-sm uppercase tracking-[0.3ch] text-amber-200/90 mb-4 track-visible duration-1000 translate-y-4 visible:translate-y-0 scale-98 visible:scale-100 opacity-0 visible:opacity-100">{{ d.label }}</p>
+    <h2 class="playfair-display-sc font-semibold text-3xl md:text-5xl track-visible duration-1000 translate-y-4 visible:translate-y-0 scale-98 visible:scale-100 opacity-0 visible:opacity-100">{{ d.heading }}</h2>
     <p class="mt-6 text-lg text-slate-400 max-w-160 self-center mx-auto track-visible duration-1000 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">
-      We source premium materials directly and pass the savings to you —
-      delivering homes with Calacatta marble, walnut millwork, and designer fixtures
-      at a price point that respects your budget.
-      Every project is built to the highest standards, on time, and backed by warranty.
+      {{ d.text }}
     </p>
   </header>
 
   <div class="mt-12 lg:mt-24 grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-8 container mx-auto px-4 lg:px-6">
-    <figure class="duration-1080 hover:scale-102 track-visible translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">
-      <img src="./img/mission1.avif" alt="Architectural detail of a Ventclair luxury home" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
+    {% for img in home.mission.images %}
+    <figure class="duration-1080 hover:scale-102 track-visible translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 {% if forloop.index == 2 %}delay-150{% elsif forloop.index == 3 %}delay-300{% endif %}">
+      <img src="{{ page.base }}{{ img }}" alt="{{ d.heading }}" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
     </figure>
-    <figure class="duration-1080 hover:scale-102 track-visible translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">
-      <img src="./img/mission2.avif" alt="Premium materials and expert construction" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
-    </figure>
-    <figure class="duration-1080 hover:scale-102 track-visible translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-300">
-      <img src="./img/mission3.avif" alt="Finished interior of a custom-built residence" class="w-full h-64 lg:h-128 rounded-xl shadow-xl object-cover">
-    </figure>
+    {% endfor %}
   </div>
 </section>
 
+{% assign d = home.quality[lang] %}
 <section id="quality" class="relative group overflow-clip">
-  <img src="./img/crafting1.avif" alt="Close-up of quality craftsmanship in home construction" class="animate-showcase w-full h-[100vh] lg:h-[75vh] object-cover duration-10800 scale-100 group-hover:scale-108">
+  <img src="{{ page.base }}{{ home.quality.image }}" alt="{{ d.heading }}" class="animate-showcase w-full h-[100vh] lg:h-[75vh] object-cover duration-10800 scale-100 group-hover:scale-108">
   <div class="absolute z-1 inset-0 bg-gradient-to-b from-slate-900/80 to-slate-900/50 flex items-center justify-center">
     <div class="text-center text-white max-w-3xl px-4 md:px-6">
       <img src="./img/icon8.avif" alt="" class="w-24 mb-12 mx-auto track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100" />
-      <h2 class="text-4xl md:text-5xl playfair-display-sc font-semibold mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">Quality Craftsmanship</h2>
-      <p class="text-lg md:text-xl mb-8 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">We prioritize uncompromising quality and refined design, grounded in a deep understanding of contemporary
-        expectations.
-        Every element is carefully selected to ensure durability, comfort, and excellence.
-        From structure to finish, we apply the highest standards at every stage — because true quality is not only seen, but felt over time.
-      </p>
+      <h2 class="text-4xl md:text-5xl playfair-display-sc font-semibold mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">{{ d.heading }}</h2>
+      <p class="text-lg md:text-xl mb-8 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">{{ d.text }}</p>
     </div>
   </div>
 </section>
 
+{% assign d = home.detail[lang] %}
 <section id="art-of-detail">
-  <h2 class="sr-only">The Art of Detail</h2>
+  <h2 class="sr-only">{{ d.heading1 }}</h2>
   <article class="py-20 md:py-28 max-md:px-6 bg-gradient-to-b from-white to-slate-50 flex items-center justify-between gap-8 md:gap-16 flex-col md:flex-row">
-    <img src="./img/crafting3.avif" alt="Meticulous detail work on a luxury home interior" class="md:w-1/2 h-auto self-start max-md:max-h-82 rounded-xl md:rounded-l-none md:rounded-r-2xl shadow-lg object-cover duration-5400 ease-out transform hover:scale-105">
+    <img src="{{ page.base }}{{ home.detail.image1 }}" alt="{{ d.heading1 }}" class="md:w-1/2 h-auto self-start max-md:max-h-82 rounded-xl md:rounded-l-none md:rounded-r-2xl shadow-lg object-cover duration-5400 ease-out transform hover:scale-105">
     <div class="md:w-2/5 mr-auto">
-      <h3 class="text-4xl md:text-4xl playfair-display-sc font-semibold tracking-wider text-slate-600 mb-8 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">The Art of Detail</h3>
-      <p class="text-slate-700 leading-relaxed text-lg mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">Each creation embodies the perfect balance between cutting-edge innovation, meticulous
-        craftsmanship, and timeless style.
-        It is within the smallest details that true elegance reveals itself — where design transforms into art, and craftsmanship gives way to a lasting legacy.</p>
+      <h3 class="text-4xl md:text-4xl playfair-display-sc font-semibold tracking-wider text-slate-600 mb-8 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">{{ d.heading1 }}</h3>
+      <p class="text-slate-700 leading-relaxed text-lg mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">{{ d.text1 }}</p>
     </div>
   </article>
   <article class="bg-slate-900 max-md:pb-0 text-white flex items-center justify-between gap-8 md:gap-16 flex-col sm:flex-row group md:py-20 overflow-clip">
     <div class="md:w-1/3 mx-auto">
-      <h3 class="max-md:px-6 text-4xl md:text-4xl playfair-display-sc font-semibold tracking-wider text-slate-100 mt-12 mb-8 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">Our Craftsmanship Philosophy</h3>
-      <p class="max-md:px-6 text-slate-300 leading-relaxed text-lg mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">We approach each project with a philosophy of craftsmanship that values
-        quality over quantity. Our team of skilled artisans and architects work collaboratively to ensure that every
-        element of your home is crafted with precision and care, resulting in a space that is not only functional but also a work of art.</p>
+      <h3 class="max-md:px-6 text-4xl md:text-4xl playfair-display-sc font-semibold tracking-wider text-slate-100 mt-12 mb-8 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">{{ d.heading2 }}</h3>
+      <p class="max-md:px-6 text-slate-300 leading-relaxed text-lg mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">{{ d.text2 }}</p>
     </div>
-    <img src="./img/crafting2.avif" alt="Artisan working on premium home finishes" class="md:w-1/2 h-auto max-md:max-h-160 object-cover md:rounded-2xl transition-transform duration-5400 ease-out transform origin-left hover:scale-105">
+    <img src="{{ page.base }}{{ home.detail.image2 }}" alt="{{ d.heading2 }}" class="md:w-1/2 h-auto max-md:max-h-160 object-cover md:rounded-2xl transition-transform duration-5400 ease-out transform origin-left hover:scale-105">
   </article>
 </section>
 
+{% assign d = home.vision[lang] %}
 <section id="vision" class="bg-slate-900 text-white py-16 md:py-20 lg:py-28 border-t border-t-slate-800">
-  <h2 class="container text-4xl md:text-5xl playfair-display-sc font-semibold tracking-wide text-center my-6 md:mb-12 mx-auto track-visible duration-1080 translate-y-2 visible:translate-y-0 opacity-0 visible:opacity-100">Our Vision</h2>
+  <h2 class="container text-4xl md:text-5xl playfair-display-sc font-semibold tracking-wide text-center my-6 md:mb-12 mx-auto track-visible duration-1080 translate-y-2 visible:translate-y-0 opacity-0 visible:opacity-100">{{ d.heading }}</h2>
   <div class="container mx-auto px-4 md:px-6 text-center flex flex-col md:flex-row items-center gap-12 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">
     <div class="max-w-2xl mx-auto md:mb-8 text-left">
-      <h3 class="text-2xl md:text-3xl font-serif mb-4">Transforming Visions into Reality</h3>
-      <p class="text-lg md:text-xl text-slate-300">We believe a living space should reflect a sophisticated lifestyle.
-        Every detail is thoughtfully designed to provide exceptional comfort, harmoniously blending elegance and functionality for a high-end experience.</p>
+      <h3 class="text-2xl md:text-3xl font-serif mb-4">{{ d.subtitle }}</h3>
+      <p class="text-lg md:text-xl text-slate-300">{{ d.text }}</p>
     </div>
-    <img src="./img/dream.avif" alt="Modern luxury living space with natural light" class="w-full md:w-1/2 h-auto max-md:max-h-82 rounded-lg shadow-lg object-cover transition-transform duration-5400 ease-out transform hover:scale-108 order-0">
+    <img src="{{ page.base }}{{ home.vision.image }}" alt="{{ d.heading }}" class="w-full md:w-1/2 h-auto max-md:max-h-82 rounded-lg shadow-lg object-cover transition-transform duration-5400 ease-out transform hover:scale-108 order-0">
   </div>
 </section>
 
 <section id="qualities" class="bg-slate-900 text-white pt-8 pb-16 md:pb-20 lg:pb-28">
   <div class="grid grid-cols-1 sm:grid-cols-3 container px-6 gap-8 md:gap-20 mx-auto">
-    <article class="max-md:text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 border-t border-slate-800 pt-8">
-      <img src="./img/icon2.avif" alt="" class="size-18 max-md:mx-auto mb-6 md:mb-12" />
-      <h3 class="text-2xl mb-4">Confidence that lasts</h3>
-      <p class="text-slate-400">We stand behind every project with solid warranty coverage:<br>
-        — 5-year warranty on foundation and structural frame<br>
-        — Up to 15 years on the roofing system<br>
-        — Up to 10 years on the heat pump system
-      </p>
+    {% for val in home.values %}{% assign v = val[lang] %}
+    <article class="max-md:text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 {% if forloop.index == 2 %}delay-150{% elsif forloop.index == 3 %}delay-300{% endif %} border-t border-slate-800 pt-8">
+      <img src="{{ page.base }}{{ val.icon }}" alt="" class="size-18 max-md:mx-auto mb-6 md:mb-12" />
+      <h3 class="text-2xl mb-4">{{ v.heading }}</h3>
+      <p class="text-slate-400">{{ v.text }}</p>
     </article>
-    <article class="max-md:text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150 border-t border-slate-800 pt-8">
-      <img src="./img/icon5.avif" alt="" class="size-18 max-md:mx-auto mb-6 md:mb-12" />
-      <h3 class="text-2xl mb-4">Accessible Luxury</h3>
-      <p class="text-slate-400">Premium materials imported directly, expert craftsmanship, masterful design — all at a price that respects your budget. Luxury within your reach.</p>
-    </article>
-    <article class="max-md:text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 delay-300 border-t border-slate-800 pt-8">
-      <img src="./img/icon1.avif" alt="" class="size-18 max-md:mx-auto mb-6 md:mb-12" />
-      <h3 class="text-2xl mb-4">On-time delivery</h3>
-      <p class="text-slate-400">
-        Your project delivered on schedule, because we value your time and trust.
-        Our planning and execution ensure deadlines are met without compromising quality.
-      </p>
-    </article>
+    {% endfor %}
   </div>
 </section>
 
+{% assign d = home.portfolio[lang] %}
 <section id="projects" class="py-16 md:py-28 bg-gradient-to-b from-slate-50 to-slate-100">
   <div class="container mx-auto px-4 md:px-6">
     <div class="text-center max-w-3xl mx-auto mb-16">
       <div class="transition-all duration-1000 ease-out opacity-100 translate-y-0">
-        <p class="text-sm uppercase tracking-[0.3ch] text-yellow-700/80 mb-4 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">Our projects</p>
-        <h2 class="text-3xl md:text-4xl playfair-display-sc font-semibold text-slate-900 mt-2 mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">A Showcase of Our Work</h2>
-        <p class="text-slate-700 leading-relaxed track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">Our portfolio highlights the homes we've built with precision, creativity, and care. Each project
-          reflects our commitment to quality construction, thoughtful design, and client satisfaction.</p>
+        <p class="text-sm uppercase tracking-[0.3ch] text-yellow-700/80 mb-4 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">{{ d.label }}</p>
+        <h2 class="text-3xl md:text-4xl playfair-display-sc font-semibold text-slate-900 mt-2 mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">{{ d.heading }}</h2>
+        <p class="text-slate-700 leading-relaxed track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">{{ d.text }}</p>
       </div>
     </div>
   </div>
@@ -162,61 +137,44 @@ body_class: ""
 
   <div class="text-center mt-8 mb-4">
     <a href="./projects.html" class="inline-block bg-slate-900 text-slate-200 px-8 py-4 text-lg font-semibold rounded-full border border-slate-800 hover:bg-slate-800 hover:border-slate-700 focus-visible:outline-2 focus-visible:outline-amber-400 focus-visible:outline-offset-2 transition-colors duration-200 no-underline!">
-      View All Projects
+      {{ d.cta }}
     </a>
   </div>
 </section>
 
+{% assign d = home.process[lang] %}
 <section id="process" class="bg-slate-900 text-white py-16 md:py-20 lg:py-28 border-t border-slate-800 bg-radial-[at_50%_0%] from-blue-400/20 via-indigo-500/5 to-transparent to-90%">
   <div class="container mx-auto px-4 md:px-6">
     <div class="text-center max-w-3xl mx-auto mb-12 md:mb-20">
-      <p class="text-sm uppercase tracking-[0.3ch] text-amber-200/90 mb-4 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">How we work</p>
-      <h2 class="text-3xl md:text-4xl playfair-display-sc font-semibold mt-2 mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">From Vision to Reality</h2>
-      <p class="text-slate-400 leading-relaxed track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">A clear, structured process ensures your project is delivered with precision and care at every stage.</p>
+      <p class="text-sm uppercase tracking-[0.3ch] text-amber-200/90 mb-4 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">{{ d.label }}</p>
+      <h2 class="text-3xl md:text-4xl playfair-display-sc font-semibold mt-2 mb-6 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">{{ d.heading }}</h2>
+      <p class="text-slate-400 leading-relaxed track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">{{ d.text }}</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 max-w-5xl mx-auto relative">
-      <!-- connecting line (desktop only) -->
       <div class="hidden md:block absolute top-7 left-[calc(12.5%+24px)] right-[calc(12.5%+24px)] h-px bg-gradient-to-r from-amber-200/0 via-amber-200/20 to-amber-200/0"></div>
-
-      <article class="text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 relative">
+      {% assign numerals = "I.|II.|III.|IV." | split: "|" %}
+      {% assign icons = '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>|<path d="m15 5 4 4"/><path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13"/><path d="m8 6 2-2"/><path d="m2 22 5.5-1.5L21.17 6.83a2.82 2.82 0 0 0-4-4L3.5 16.5Z"/><path d="m18 16 2-2"/><path d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17"/>|<path d="M2 20h20"/><path d="M5 20V8.2a1 1 0 0 1 .4-.8l5-3.7a1 1 0 0 1 1.2 0l5 3.7a1 1 0 0 1 .4.8V20"/><path d="M9 20v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/>|<path d="m21 2-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0 3 3L22 7l-3-3m-3.5 3.5L19 4"/>' | split: "|" %}
+      {% for step in d.steps %}
+      <article class="text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 {% if forloop.index == 2 %}delay-100{% elsif forloop.index == 3 %}delay-200{% elsif forloop.index == 4 %}delay-300{% endif %} relative">
         <div class="w-14 h-14 rounded-full border border-amber-200/30 bg-amber-200/5 flex items-center justify-center mx-auto mb-5 relative z-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-amber-200"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-amber-200">{{ icons[forloop.index0] }}</svg>
         </div>
-        <h3 class="text-lg font-medium mb-2"><span class="text-amber-200/60">I.</span> Consultation</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">We listen to your vision, assess the site, and define the scope, budget, and timeline together.</p>
+        <h3 class="text-lg font-medium mb-2"><span class="text-amber-200/60">{{ numerals[forloop.index0] }}</span> {{ step.title }}</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">{{ step.text }}</p>
       </article>
-      <article class="text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 delay-100 relative">
-        <div class="w-14 h-14 rounded-full border border-amber-200/30 bg-amber-200/5 flex items-center justify-center mx-auto mb-5 relative z-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-amber-200"><path d="m15 5 4 4"/><path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13"/><path d="m8 6 2-2"/><path d="m2 22 5.5-1.5L21.17 6.83a2.82 2.82 0 0 0-4-4L3.5 16.5Z"/><path d="m18 16 2-2"/><path d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17"/></svg>
-        </div>
-        <h3 class="text-lg font-medium mb-2"><span class="text-amber-200/60">II.</span> Design</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Architectural plans, material selection, and interior layouts — refined until every detail is right.</p>
-      </article>
-      <article class="text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 delay-200 relative">
-        <div class="w-14 h-14 rounded-full border border-amber-200/30 bg-amber-200/5 flex items-center justify-center mx-auto mb-5 relative z-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-amber-200"><path d="M2 20h20"/><path d="M5 20V8.2a1 1 0 0 1 .4-.8l5-3.7a1 1 0 0 1 1.2 0l5 3.7a1 1 0 0 1 .4.8V20"/><path d="M9 20v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/></svg>
-        </div>
-        <h3 class="text-lg font-medium mb-2"><span class="text-amber-200/60">III.</span> Build</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Expert craftsmen bring the design to life with premium materials and meticulous attention to detail.</p>
-      </article>
-      <article class="text-center track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 delay-300 relative">
-        <div class="w-14 h-14 rounded-full border border-amber-200/30 bg-amber-200/5 flex items-center justify-center mx-auto mb-5 relative z-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-amber-200"><path d="m21 2-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0 3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
-        </div>
-        <h3 class="text-lg font-medium mb-2"><span class="text-amber-200/60">IV.</span> Deliver</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Final walkthrough, quality inspection, and handover — your home, built to last and backed by warranty.</p>
-      </article>
+      {% endfor %}
     </div>
   </div>
 </section>
 
+{% assign d = home.consultation[lang] %}
 <section id="consultation" class="py-16 md:py-20 lg:py-28 bg-gradient-to-b from-slate-50 to-white">
   <div class="container mx-auto px-4 md:px-6">
     <div class="max-w-2xl mx-auto">
       <div class="text-center mb-12">
-        <p class="text-sm uppercase tracking-[0.3ch] text-yellow-700/80 mb-4 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">Start your project</p>
-        <h2 class="text-3xl md:text-4xl playfair-display-sc font-semibold text-slate-900 mt-2 mb-4 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">Get a Free Consultation</h2>
-        <p class="text-slate-600 leading-relaxed track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">Tell us about your project and we'll get back to you within 24 hours.</p>
+        <p class="text-sm uppercase tracking-[0.3ch] text-yellow-700/80 mb-4 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100">{{ d.label }}</p>
+        <h2 class="text-3xl md:text-4xl playfair-display-sc font-semibold text-slate-900 mt-2 mb-4 track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-75">{{ d.heading }}</h2>
+        <p class="text-slate-600 leading-relaxed track-visible duration-1080 translate-y-4 visible:translate-y-0 opacity-0 visible:opacity-100 delay-150">{{ d.text }}</p>
       </div>
       <form action="https://formspree.io/f/xnjgbpnq" method="POST" class="space-y-5 track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 delay-200">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -271,7 +229,7 @@ body_class: ""
         </div>
         <button type="submit"
           class="w-full bg-slate-900 text-white px-8 py-4 text-lg font-semibold rounded-full border border-slate-800 hover:bg-slate-800 hover:border-slate-700 focus-visible:outline-2 focus-visible:outline-amber-400 focus-visible:outline-offset-2 transition-colors duration-200 cursor-pointer">
-          Request Free Consultation
+          {{ d.cta }}
         </button>
       </form>
     </div>

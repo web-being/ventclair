@@ -1,6 +1,6 @@
 media:
-  input: img/portfolio
-  output: img/portfolio
+  input: img
+  output: img
 
 settings:
   hide: true
@@ -8,6 +8,64 @@ settings:
     merge: false
 
 components:
+  section_text:
+    type: object
+    fields:
+      - name: label
+        label: Label
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+      - name: text
+        label: Text
+        type: text
+
+  section_text_cta:
+    type: object
+    fields:
+      - name: label
+        label: Label
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+      - name: text
+        label: Text
+        type: text
+      - name: cta
+        label: Button Text
+        type: string
+
+  step:
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: "{fields.title}"
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: text
+        label: Text
+        type: text
+
+  value_card:
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: "{fields.heading}"
+    fields:
+      - name: heading
+        label: Heading
+        type: string
+      - name: text
+        label: Text
+        type: text
+
+
   locale:
     type: object
     fields:
@@ -106,3 +164,234 @@ content:
       - name: fr
         label: French
         component: locale
+
+  - name: home
+    label: Home Page
+    path: _data/home.yml
+    type: file
+    fields:
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - name: image
+            label: Background Image
+            type: image
+          - name: en
+            label: English
+            type: object
+            fields:
+              - name: heading
+                label: Heading
+                type: string
+              - name: text
+                label: Text
+                type: text
+              - name: cta1
+                label: Button 1
+                type: string
+              - name: cta2
+                label: Button 2
+                type: string
+          - name: fr
+            label: French
+            type: object
+            fields:
+              - name: heading
+                label: Heading
+                type: string
+              - name: text
+                label: Text
+                type: text
+              - name: cta1
+                label: Button 1
+                type: string
+              - name: cta2
+                label: Button 2
+                type: string
+      - name: mission
+        label: Mission
+        type: object
+        fields:
+          - name: images
+            label: Images
+            type: image
+            list: true
+          - name: en
+            label: English
+            component: section_text
+          - name: fr
+            label: French
+            component: section_text
+      - name: quality
+        label: Quality
+        type: object
+        fields:
+          - name: image
+            label: Background Image
+            type: image
+          - name: en
+            label: English
+            type: object
+            fields:
+              - name: heading
+                label: Heading
+                type: string
+              - name: text
+                label: Text
+                type: text
+          - name: fr
+            label: French
+            type: object
+            fields:
+              - name: heading
+                label: Heading
+                type: string
+              - name: text
+                label: Text
+                type: text
+      - name: detail
+        label: Art of Detail
+        type: object
+        fields:
+          - name: image1
+            label: Image 1
+            type: image
+          - name: image2
+            label: Image 2
+            type: image
+          - name: en
+            label: English
+            type: object
+            fields:
+              - name: heading1
+                label: Heading 1
+                type: string
+              - name: text1
+                label: Text 1
+                type: text
+              - name: heading2
+                label: Heading 2
+                type: string
+              - name: text2
+                label: Text 2
+                type: text
+          - name: fr
+            label: French
+            type: object
+            fields:
+              - name: heading1
+                label: Heading 1
+                type: string
+              - name: text1
+                label: Text 1
+                type: text
+              - name: heading2
+                label: Heading 2
+                type: string
+              - name: text2
+                label: Text 2
+                type: text
+      - name: vision
+        label: Vision
+        type: object
+        fields:
+          - name: image
+            label: Image
+            type: image
+          - name: en
+            label: English
+            type: object
+            fields:
+              - name: heading
+                label: Heading
+                type: string
+              - name: subtitle
+                label: Subtitle
+                type: string
+              - name: text
+                label: Text
+                type: text
+          - name: fr
+            label: French
+            type: object
+            fields:
+              - name: heading
+                label: Heading
+                type: string
+              - name: subtitle
+                label: Subtitle
+                type: string
+              - name: text
+                label: Text
+                type: text
+      - name: values
+        label: Value Propositions
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon
+            type: image
+          - name: en
+            label: English
+            component: value_card
+          - name: fr
+            label: French
+            component: value_card
+      - name: portfolio
+        label: Portfolio Section
+        type: object
+        fields:
+          - name: en
+            label: English
+            component: section_text_cta
+          - name: fr
+            label: French
+            component: section_text_cta
+      - name: process
+        label: Process
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: heading
+                label: Heading
+                type: string
+              - name: text
+                label: Text
+                type: text
+              - name: steps
+                label: Steps
+                component: step
+          - name: fr
+            label: French
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: heading
+                label: Heading
+                type: string
+              - name: text
+                label: Text
+                type: text
+              - name: steps
+                label: Steps
+                component: step
+      - name: consultation
+        label: Consultation
+        type: object
+        fields:
+          - name: en
+            label: English
+            component: section_text_cta
+          - name: fr
+            label: French
+            component: section_text_cta

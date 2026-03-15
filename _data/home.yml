@@ -1,0 +1,135 @@
+hero:
+  image: img/hero.avif
+  en:
+    heading: Luxury Construction
+    text: "Groupe Ventclair is a luxury home builder based in Montreal, Canada.<br>Premium materials, expert craftsmanship, and accessible pricing for discerning clients."
+    cta1: Explore Portfolio
+    cta2: Get a Free Quote
+  fr:
+    heading: Construction de luxe
+    text: "Groupe Ventclair est un constructeur de maisons de luxe basé à Montréal, Canada.<br>Matériaux haut de gamme, artisanat expert et prix accessibles pour une clientèle exigeante."
+    cta1: Découvrir le portfolio
+    cta2: Obtenir une soumission
+
+mission:
+  images:
+    - img/mission1.avif
+    - img/mission2.avif
+    - img/mission3.avif
+  en:
+    label: Our mission
+    heading: Building Excellence
+    text: "We source premium materials directly and pass the savings to you — delivering homes with Calacatta marble, walnut millwork, and designer fixtures at a price point that respects your budget. Every project is built to the highest standards, on time, and backed by warranty."
+  fr:
+    label: Notre mission
+    heading: "Construire l'excellence"
+    text: "Nous importons des matériaux haut de gamme directement et vous en faisons profiter — des maisons avec marbre Calacatta, menuiserie en noyer et accessoires de designer à un prix qui respecte votre budget. Chaque projet est construit aux plus hauts standards, dans les délais, et couvert par garantie."
+
+quality:
+  image: img/crafting1.avif
+  en:
+    heading: Quality Craftsmanship
+    text: "We prioritize uncompromising quality and refined design, grounded in a deep understanding of contemporary expectations. Every element is carefully selected to ensure durability, comfort, and excellence. From structure to finish, we apply the highest standards at every stage — because true quality is not only seen, but felt over time."
+  fr:
+    heading: Artisanat de qualité
+    text: "Nous privilégions une qualité sans compromis et un design raffiné, ancré dans une compréhension profonde des attentes contemporaines. Chaque élément est soigneusement sélectionné pour garantir durabilité, confort et excellence. De la structure à la finition, nous appliquons les normes les plus élevées à chaque étape — car la véritable qualité se voit et se ressent avec le temps."
+
+detail:
+  image1: img/crafting3.avif
+  image2: img/crafting2.avif
+  en:
+    heading1: The Art of Detail
+    text1: "Each creation embodies the perfect balance between cutting-edge innovation, meticulous craftsmanship, and timeless style. It is within the smallest details that true elegance reveals itself — where design transforms into art, and craftsmanship gives way to a lasting legacy."
+    heading2: Our Craftsmanship Philosophy
+    text2: "We approach each project with a philosophy of craftsmanship that values quality over quantity. Our team of skilled artisans and architects work collaboratively to ensure that every element of your home is crafted with precision and care, resulting in a space that is not only functional but also a work of art."
+  fr:
+    heading1: "L'art du détail"
+    text1: "Chaque création incarne l'équilibre parfait entre innovation de pointe, artisanat méticuleux et style intemporel. C'est dans les moindres détails que la véritable élégance se révèle — où le design se transforme en art, et l'artisanat laisse place à un héritage durable."
+    heading2: "Notre philosophie de l'artisanat"
+    text2: "Nous abordons chaque projet avec une philosophie de l'artisanat qui valorise la qualité sur la quantité. Notre équipe d'artisans et d'architectes qualifiés travaille en collaboration pour s'assurer que chaque élément de votre maison est réalisé avec précision et soin, résultant en un espace qui est non seulement fonctionnel mais aussi une œuvre d'art."
+
+vision:
+  image: img/dream.avif
+  en:
+    heading: Our Vision
+    subtitle: Transforming Visions into Reality
+    text: "We believe a living space should reflect a sophisticated lifestyle. Every detail is thoughtfully designed to provide exceptional comfort, harmoniously blending elegance and functionality for a high-end experience."
+  fr:
+    heading: Notre vision
+    subtitle: Transformer les visions en réalité
+    text: "Nous croyons qu'un espace de vie doit refléter un style de vie sophistiqué. Chaque détail est soigneusement conçu pour offrir un confort exceptionnel, alliant harmonieusement élégance et fonctionnalité pour une expérience haut de gamme."
+
+values:
+  - icon: img/icon2.avif
+    en:
+      heading: Confidence that lasts
+      text: "We stand behind every project with solid warranty coverage:<br>— 5-year warranty on foundation and structural frame<br>— Up to 15 years on the roofing system<br>— Up to 10 years on the heat pump system"
+    fr:
+      heading: Confiance durable
+      text: "Nous soutenons chaque projet avec une couverture de garantie solide :<br>— Garantie de 5 ans sur la fondation et la structure<br>— Jusqu'à 15 ans sur la toiture<br>— Jusqu'à 10 ans sur le système de thermopompe"
+  - icon: img/icon5.avif
+    en:
+      heading: Accessible Luxury
+      text: "Premium materials imported directly, expert craftsmanship, masterful design — all at a price that respects your budget. Luxury within your reach."
+    fr:
+      heading: Luxe accessible
+      text: "Matériaux haut de gamme importés directement, artisanat expert, design maîtrisé — le tout à un prix qui respecte votre budget. Le luxe à votre portée."
+  - icon: img/icon1.avif
+    en:
+      heading: On-time delivery
+      text: "Your project delivered on schedule, because we value your time and trust. Our planning and execution ensure deadlines are met without compromising quality."
+    fr:
+      heading: Livraison à temps
+      text: "Votre projet livré dans les délais, car nous respectons votre temps et votre confiance. Notre planification et notre exécution assurent le respect des échéances sans compromettre la qualité."
+
+portfolio:
+  en:
+    label: Our projects
+    heading: A Showcase of Our Work
+    text: "Our portfolio highlights the homes we've built with precision, creativity, and care. Each project reflects our commitment to quality construction, thoughtful design, and client satisfaction."
+    cta: View All Projects
+  fr:
+    label: Nos projets
+    heading: Une vitrine de notre travail
+    text: "Notre portfolio met en lumière les maisons que nous avons construites avec précision, créativité et soin. Chaque projet reflète notre engagement envers une construction de qualité, un design réfléchi et la satisfaction du client."
+    cta: Voir tous les projets
+
+process:
+  en:
+    label: How we work
+    heading: From Vision to Reality
+    text: "A clear, structured process ensures your project is delivered with precision and care at every stage."
+    steps:
+      - title: Consultation
+        text: "We listen to your vision, assess the site, and define the scope, budget, and timeline together."
+      - title: Design
+        text: "Architectural plans, material selection, and interior layouts — refined until every detail is right."
+      - title: Build
+        text: "Expert craftsmen bring the design to life with premium materials and meticulous attention to detail."
+      - title: Deliver
+        text: "Final walkthrough, quality inspection, and handover — your home, built to last and backed by warranty."
+  fr:
+    label: Notre processus
+    heading: De la vision à la réalité
+    text: "Un processus clair et structuré assure que votre projet est livré avec précision et soin à chaque étape."
+    steps:
+      - title: Consultation
+        text: "Nous écoutons votre vision, évaluons le site et définissons ensemble la portée, le budget et le calendrier."
+      - title: Conception
+        text: "Plans architecturaux, sélection des matériaux et aménagements intérieurs — raffinés jusqu'à la perfection."
+      - title: Construction
+        text: "Nos artisans experts donnent vie au design avec des matériaux haut de gamme et une attention méticuleuse aux détails."
+      - title: Livraison
+        text: "Visite finale, inspection qualité et remise des clés — votre maison, construite pour durer et couverte par garantie."
+
+consultation:
+  en:
+    label: Start your project
+    heading: Get a Free Consultation
+    text: "Tell us about your project and we'll get back to you within 24 hours."
+    cta: Request Free Consultation
+  fr:
+    label: Démarrer votre projet
+    heading: Consultation gratuite
+    text: "Parlez-nous de votre projet et nous vous répondrons dans les 24 heures."
+    cta: Demander une consultation gratuite
