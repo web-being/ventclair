@@ -1,9 +1,9 @@
 ---
 order: 3
 slug: sainte-adele
-cover: 1
+cover: img/portfolio/sainte-adele/1.webp
 images:
-  - 1
+  - img/portfolio/sainte-adele/1.webp
 en:
   title: "Residential Multifamily Property – 6 Units"
   location: "Sainte-Adèle, QC"

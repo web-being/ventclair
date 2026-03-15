@@ -2,29 +2,29 @@
 order: 1
 slug: hudson
 year: 2022
-cover: 1
+cover: img/portfolio/hudson/1.webp
 images:
-  - 25
-  - 7
-  - 71
-  - 70
-  - 69
-  - 61
-  - 9
-  - 58
-  - 57
-  - 55
-  - 54
-  - 53
-  - 51
-  - 44
-  - 40
-  - 39
-  - 36
-  - 34
-  - 25
-  - 21
-  - 79
+  - img/portfolio/hudson/25.webp
+  - img/portfolio/hudson/7.webp
+  - img/portfolio/hudson/71.webp
+  - img/portfolio/hudson/70.webp
+  - img/portfolio/hudson/69.webp
+  - img/portfolio/hudson/61.webp
+  - img/portfolio/hudson/9.webp
+  - img/portfolio/hudson/58.webp
+  - img/portfolio/hudson/57.webp
+  - img/portfolio/hudson/55.webp
+  - img/portfolio/hudson/54.webp
+  - img/portfolio/hudson/53.webp
+  - img/portfolio/hudson/51.webp
+  - img/portfolio/hudson/44.webp
+  - img/portfolio/hudson/40.webp
+  - img/portfolio/hudson/39.webp
+  - img/portfolio/hudson/36.webp
+  - img/portfolio/hudson/34.webp
+  - img/portfolio/hudson/25.webp
+  - img/portfolio/hudson/21.webp
+  - img/portfolio/hudson/79.webp
 en:
   title: "Luxury Residential Home"
   location: "Hudson, QC"

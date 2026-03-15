@@ -2,9 +2,9 @@
 order: 2
 slug: lachute
 year: 2020
-cover: 1
+cover: img/portfolio/lachute/1.webp
 images:
-  - 1
+  - img/portfolio/lachute/1.webp
 en:
   title: "Residential Multifamily Complex – 16 Units"
   location: "Lachute, QC"

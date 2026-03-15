@@ -2,6 +2,9 @@ settings:
   hide: true
   content:
     merge: false
+  media:
+    input: img/portfolio
+    output: img/portfolio
 
 components:
   spec:
@@ -103,11 +106,11 @@ content:
         label: Year
         type: number
       - name: cover
-        label: Cover Image #
-        type: number
+        label: Cover Image
+        type: image
       - name: images
-        label: Image Numbers
-        type: number
+        label: Images
+        type: image
         list: true
       - name: en
         label: English

@@ -31,7 +31,7 @@ layout: default
         <div class="relative lg:w-3/5 aspect-[4/3] lg:aspect-auto lg:min-h-[28rem] overflow-hidden bg-slate-800 shrink-0">
           <div class="slider-track flex h-full transition-transform duration-500 ease-out" data-current="0">
             {% for img in imgs %}
-            <img src="{{ page.base }}img/portfolio/{{ proj.slug }}/{{ img }}.webp" alt="{{ data.title }}" class="w-full h-full object-cover shrink-0" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
+            <img src="{{ page.base }}{{ img }}" alt="{{ data.title }}" class="w-full h-full object-cover shrink-0" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
             {% endfor %}
           </div>
           {% if multi %}
