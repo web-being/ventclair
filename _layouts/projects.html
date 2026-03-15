@@ -65,12 +65,14 @@ layout: default
           {% if data.address and data.address != data.location %}<p class="text-slate-500 text-sm mb-4">{{ data.address }}</p>{% else %}<div class="mb-2"></div>{% endif %}
           <p class="text-slate-400 leading-relaxed mb-8">{{ data.description }}</p>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
-            {% for spec in data.specs %}
+            {% assign lines = data.specs | split: "
+" %}
+            {% for line in lines %}{% assign parts = line | split: ": " %}{% if parts.size >= 2 %}
             <div class="flex justify-between gap-3 items-baseline border-b border-slate-800/60 pb-2">
-              <span class="text-slate-500 text-sm shrink-0">{{ spec.key }}</span>
-              <span class="text-slate-200 font-medium text-sm text-right">{{ spec.value }}</span>
+              <span class="text-slate-500 text-sm shrink-0">{{ parts[0] }}</span>
+              <span class="text-slate-200 font-medium text-sm text-right">{{ parts | slice: 1, parts.size | join: ": " }}</span>
             </div>
-            {% endfor %}
+            {% endif %}{% endfor %}
           </div>
         </div>
       </div>

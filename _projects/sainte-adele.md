@@ -14,15 +14,11 @@ en:
     is located in a quiet area surrounded by natural landscapes. The property
     features practical layouts and outdoor parking for residents. The building
     provides a comfortable residential environment in a calm setting.
-  specs:
-    - key: Property Type
-      value: Multifamily Residential
-    - key: Units
-      value: 6 Apartments
-    - key: Floors
-      value: "3"
-    - key: Parking
-      value: Outdoor parking
+  specs: |-
+    Property Type: Multifamily Residential
+    Units: 6 Apartments
+    Floors: 3
+    Parking: Outdoor parking
 fr:
   title: Immeuble résidentiel multifamilial – 6 logements
   location: Sainte-Adèle, QC
@@ -34,13 +30,9 @@ fr:
     naturel. La propriété offre des espaces fonctionnels ainsi qu'un
     stationnement extérieur pour les résidents. L'immeuble propose un cadre de
     vie confortable dans un environnement paisible.
-  specs:
-    - key: Type de propriété
-      value: Résidentiel multifamilial
-    - key: Logements
-      value: 6 appartements
-    - key: Étages
-      value: "3"
-    - key: Stationnement
-      value: Stationnement extérieur
+  specs: |-
+    Type de propriété: Résidentiel multifamilial
+    Logements: 6 appartements
+    Étages: 3
+    Stationnement: Stationnement extérieur
 ---
