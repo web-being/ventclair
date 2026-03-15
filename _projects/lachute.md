@@ -1,7 +1,6 @@
 ---
 order: 2
 slug: lachute
-cover: img/portfolio/lachute/1.webp
 images:
   - img/portfolio/lachute/1.webp
 en:

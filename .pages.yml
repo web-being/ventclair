@@ -396,6 +396,7 @@ content:
     label: Projects
     path: _projects
     type: collection
+    filename: "{fields.slug}.md"
     view:
       fields: [slug, order]
       sort: [order]
@@ -406,13 +407,12 @@ content:
       - name: slug
         label: Slug
         type: string
-      - name: cover
-        label: Cover Image
-        type: image
       - name: images
         label: Images
         type: image
         list: true
+        options:
+          path: portfolio
       - name: en
         label: English
         component: locale_en

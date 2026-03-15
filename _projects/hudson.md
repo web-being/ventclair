@@ -1,7 +1,6 @@
 ---
 order: 1
 slug: hudson
-cover: img/portfolio/hudson/1.webp
 images:
   - img/portfolio/hudson/25.webp
   - img/portfolio/hudson/7.webp

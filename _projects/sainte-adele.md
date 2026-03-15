@@ -1,7 +1,6 @@
 ---
 order: 3
 slug: sainte-adele
-cover: img/portfolio/sainte-adele/1.webp
 images:
   - img/portfolio/sainte-adele/1.webp
 en:
