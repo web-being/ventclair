@@ -1,10 +1,11 @@
+media:
+  input: img/portfolio
+  output: img/portfolio
+
 settings:
   hide: true
   content:
     merge: false
-  media:
-    input: img/portfolio
-    output: img/portfolio
 
 components:
   spec:
