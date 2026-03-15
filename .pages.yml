@@ -22,7 +22,11 @@ components:
         type: string
       - name: type
         label: Type
-        type: string
+        type: select
+        options:
+          values:
+            - Single-family Home
+            - Multifamily Residential
       - name: description
         label: Description
         type: text
@@ -80,7 +84,7 @@ content:
     path: _projects
     type: collection
     view:
-      fields: [slug, year, order]
+      fields: [slug, order]
       sort: [order]
     fields:
       - name: order
@@ -89,9 +93,6 @@ content:
       - name: slug
         label: Slug
         type: string
-      - name: year
-        label: Year
-        type: number
       - name: cover
         label: Cover Image
         type: image
