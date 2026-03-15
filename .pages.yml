@@ -53,10 +53,6 @@ components:
 
   value_card:
     type: object
-    list:
-      collapsible:
-        collapsed: true
-        summary: "{fields.heading}"
     fields:
       - name: heading
         label: Heading
@@ -66,7 +62,7 @@ components:
         type: text
 
 
-  locale:
+  locale_en:
     type: object
     fields:
       - name: title
@@ -90,6 +86,32 @@ components:
         type: text
       - name: specs
         label: "Specs (one per line, Label: Value)"
+        type: text
+
+  locale_fr:
+    type: object
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: location
+        label: Location
+        type: string
+      - name: address
+        label: Address
+        type: string
+      - name: type
+        label: Type
+        type: select
+        options:
+          values:
+            - Résidence unifamiliale
+            - Résidentiel multifamilial
+      - name: description
+        label: Description
+        type: text
+      - name: specs
+        label: "Specs (une par ligne, Libellé: Valeur)"
         type: text
 
 content:
@@ -136,34 +158,6 @@ content:
           - name: instagram
             label: Instagram
             type: string
-
-  - name: projects
-    label: Projects
-    path: _projects
-    type: collection
-    view:
-      fields: [slug, order]
-      sort: [order]
-    fields:
-      - name: order
-        label: Display Order
-        type: number
-      - name: slug
-        label: Slug
-        type: string
-      - name: cover
-        label: Cover Image
-        type: image
-      - name: images
-        label: Images
-        type: image
-        list: true
-      - name: en
-        label: English
-        component: locale
-      - name: fr
-        label: French
-        component: locale
 
   - name: home
     label: Home Page
@@ -328,7 +322,9 @@ content:
       - name: values
         label: Value Propositions
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: false
         fields:
           - name: icon
             label: Icon
@@ -395,3 +391,31 @@ content:
           - name: fr
             label: French
             component: section_text_cta
+
+  - name: projects
+    label: Projects
+    path: _projects
+    type: collection
+    view:
+      fields: [slug, order]
+      sort: [order]
+    fields:
+      - name: order
+        label: Display Order
+        type: number
+      - name: slug
+        label: Slug
+        type: string
+      - name: cover
+        label: Cover Image
+        type: image
+      - name: images
+        label: Images
+        type: image
+        list: true
+      - name: en
+        label: English
+        component: locale_en
+      - name: fr
+        label: French
+        component: locale_fr
