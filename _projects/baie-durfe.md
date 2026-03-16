@@ -25,6 +25,7 @@ en:
   specs: |-
     Property Type: Single-family Home
     Levels: 2 floors + fully finished basement
+    Total Living Space: 3,529 sq ft
     Bedrooms: 6
     Bathrooms: 4
     Garage: 2 car garage
@@ -44,6 +45,7 @@ fr:
   specs: |-
     Type de propriété: Résidence résidentielle
     Niveaux: 2 étages + sous-sol entièrement aménagé
+    Superficie habitable totale: 3,529 pi²
     Chambres: 6
     Salles de bain: 4
     Garage: Garage pour 2 voitures
