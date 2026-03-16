@@ -26,15 +26,12 @@ en:
   location: Dollard-des-Ormeaux, QC
   address: Dollard-des-Ormeaux, QC
   type: Single-family Home
-  description: >-
-    Luxury Residential Home
-
-    This contemporary home features a modern architectural design that combines
-    comfort and functionality. The property offers a bright open-concept layout
-    filled with natural light throughout the living spaces. The kitchen includes
-    a large central island, generous cabinet space, two kitchen sinks, and
-    granite countertops. The home also features spacious living areas designed
-    for comfortable everyday living and entertaining.
+  description: This contemporary home features a modern architectural design that
+    combines comfort and functionality. The property offers a bright
+    open-concept layout filled with natural light throughout the living spaces.
+    The kitchen includes a large central island, generous cabinet space, two
+    kitchen sinks, and granite countertops. The home also features spacious
+    living areas designed for comfortable everyday living and entertaining.
   specs: |-
     Property Type: Single-family Home
     Levels: 2 floors + fully finished basement
