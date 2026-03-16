@@ -5,8 +5,8 @@ images:
   - img/14772375_1.jpg
 en:
   title: Luxury Residential Home
-  location: Pierrefonds-Roxboro
-  address: Pierrefonds-Roxboro
+  location: Pierrefonds-Roxboro, QC
+  address: Pierrefonds-Roxboro, QC
   type: Single-family Home
   description: This prestigious stone residence features elegant architecture and
     over 5,000 sq. ft. of above-ground living space. The home offers bright open
@@ -26,8 +26,8 @@ en:
     Year Built: 2009
 fr:
   title: Résidence résidentielle de luxe
-  location: Pierrefonds-Roxboro
-  address: Pierrefonds-Roxboro
+  location: Pierrefonds-Roxboro, QC
+  address: Pierrefonds-Roxboro, QC
   type: Résidence unifamiliale
   description: >
     Cette résidence en pierre présente une architecture élégante et offre plus
