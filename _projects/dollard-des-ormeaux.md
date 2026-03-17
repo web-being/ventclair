@@ -3,24 +3,15 @@ order: 5
 slug: dollard-des-ormeaux
 images:
   - img/21399564_1.jpg
-  - img/21399564_2.jpg
-  - img/21399564_3.jpg
+  - img/21399564_7.jpg
   - img/21399564_4.jpg
   - img/21399564_5.jpg
-  - img/21399564_7.jpg
-  - img/21399564_8.jpg
   - img/21399564_10.jpg
   - img/21399564_11.jpg
   - img/21399564_12.jpg
-  - img/21399564_14.jpg
-  - img/21399564_15.jpg
   - img/21399564_17.jpg
-  - img/21399564_16.jpg
-  - img/21399564_18.jpg
   - img/21399564_19.jpg
   - img/21399564_20.jpg
-  - img/21399564_22.jpg
-  - img/21399564_23.jpg
 en:
   title: Luxury Residential Home
   location: Dollard-des-Ormeaux, QC
