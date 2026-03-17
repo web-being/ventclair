@@ -2,7 +2,7 @@
 order: 9
 slug: pierrefonds-roxboro 3
 images:
-  - img/ADDEDEEDE796B28DDFFC0F72FB-1920.webp
+  - img/2026-03-16 20.57.41.jpg
   - img/ADDEDEEDE796BA0DDFFC0F7D41-1920.webp
   - img/ADDEDEEDE796B22DDFFC0F7DCA-1920.webp
   - img/ADDEDEEDE796B88DDFFC0F7412-1920.webp
