@@ -158,6 +158,16 @@ content:
           - name: instagram
             label: Instagram
             type: string
+      - name: copyright
+        label: Copyright
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: fr
+            label: French
+            type: string
 
   - name: home
     label: Home Page
