@@ -2,6 +2,7 @@
 order: 7
 slug: baie-d'urfé 2
 images:
+  - img/699fe5282e002.jpg
   - img/699fe54109951.jpg
   - img/699fe542130f0.jpg
   - img/699fe534293de.jpg
@@ -21,7 +22,6 @@ images:
   - img/699fe52f75776.jpg
   - img/699fe52d47270.jpg
   - img/699fe52c8dad3.jpg
-  - img/699fe5282e002.jpg
 en:
   title: Luxury Residential Home
   location: Baie-D'Urfe, QC
