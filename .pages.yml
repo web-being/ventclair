@@ -361,36 +361,55 @@ content:
         fields:
           - name: en
             label: English
-            type: object
-            fields:
-              - name: label
-                label: Label
-                type: string
-              - name: heading
-                label: Heading
-                type: string
-              - name: text
-                label: Text
-                type: text
-              - name: steps
-                label: Steps
-                component: step
+            component: section_text_cta
           - name: fr
             label: French
+            component: section_text_cta
+          - name: steps
+            label: Steps
             type: object
+            list:
+              collapsible:
+                collapsed: true
             fields:
-              - name: label
-                label: Label
-                type: string
-              - name: heading
-                label: Heading
-                type: string
-              - name: text
-                label: Text
-                type: text
-              - name: steps
-                label: Steps
-                component: step
+              - name: images
+                label: Photos
+                type: image
+                list: true
+                options:
+                  path: process
+              - name: en
+                label: English
+                type: object
+                fields:
+                  - name: title
+                    label: Title
+                    type: string
+                  - name: subtitle
+                    label: Subtitle
+                    type: string
+                  - name: text
+                    label: Short Description
+                    type: text
+                  - name: description
+                    label: Detailed Description
+                    type: text
+              - name: fr
+                label: French
+                type: object
+                fields:
+                  - name: title
+                    label: Title
+                    type: string
+                  - name: subtitle
+                    label: Subtitle
+                    type: string
+                  - name: text
+                    label: Short Description
+                    type: text
+                  - name: description
+                    label: Detailed Description
+                    type: text
       - name: consultation
         label: Consultation
         type: object

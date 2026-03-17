@@ -99,28 +99,69 @@ process:
     label: How we work
     heading: From Vision to Reality
     text: "A clear, structured process ensures your project is delivered with precision and care at every stage."
-    steps:
-      - title: Consultation
-        text: "We listen to your vision, assess the site, and define the scope, budget, and timeline together."
-      - title: Design
-        text: "Architectural plans, material selection, and interior layouts — refined until every detail is right."
-      - title: Build
-        text: "Expert craftsmen bring the design to life with premium materials and meticulous attention to detail."
-      - title: Deliver
-        text: "Final walkthrough, quality inspection, and handover — your home, built to last and backed by warranty."
+    cta: View the Process
   fr:
     label: Notre processus
-    heading: De la vision à la réalité
+    heading: "De la vision à la réalité"
     text: "Un processus clair et structuré assure que votre projet est livré avec précision et soin à chaque étape."
-    steps:
-      - title: Consultation
+    cta: Voir le processus
+  steps:
+    - images:
+        - img/portfolio/hudson/1.webp
+        - img/portfolio/hudson/57.webp
+        - img/portfolio/hudson/25.webp
+      en:
+        title: Consultation
+        subtitle: Understanding Your Vision
+        text: "We listen to your vision, assess the site, and define the scope, budget, and timeline together."
+        description: "Every great project begins with a conversation. We take the time to understand your lifestyle, preferences, and aspirations — from room flow and material choices to budget parameters and timeline. Our team visits the site, evaluates conditions, and works with you to define a clear project scope. Your vision guides every decision from this point forward."
+      fr:
+        title: Consultation
+        subtitle: Comprendre votre vision
         text: "Nous écoutons votre vision, évaluons le site et définissons ensemble la portée, le budget et le calendrier."
-      - title: Conception
+        description: "Chaque grand projet commence par une conversation. Nous prenons le temps de comprendre votre mode de vie, vos préférences et vos aspirations — de la circulation des pièces au choix des matériaux, en passant par le budget et le calendrier. Notre équipe visite le site, évalue les conditions et travaille avec vous pour définir une portée de projet claire. Votre vision guide chaque décision à partir de ce moment."
+    - images:
+        - img/portfolio/hudson/10.webp
+        - img/portfolio/hudson/45.webp
+        - img/portfolio/hudson/30.webp
+      en:
+        title: Design
+        subtitle: Planning Every Detail
+        text: "Architectural plans, material selection, and interior layouts — refined until every detail is right."
+        description: "Our architects translate your vision into precise plans, harmonizing your personal preferences with municipal regulations and building codes. Material selections, spatial layouts, and structural solutions are refined through close collaboration until every detail aligns with your expectations and the city's requirements. You approve the final design before any construction begins."
+      fr:
+        title: Conception
+        subtitle: Planifier chaque détail
         text: "Plans architecturaux, sélection des matériaux et aménagements intérieurs — raffinés jusqu'à la perfection."
-      - title: Construction
+        description: "Nos architectes traduisent votre vision en plans précis, harmonisant vos préférences personnelles avec les règlements municipaux et les codes du bâtiment. La sélection des matériaux, les aménagements spatiaux et les solutions structurelles sont affinés en étroite collaboration jusqu'à ce que chaque détail corresponde à vos attentes et aux exigences de la ville. Vous approuvez le design final avant le début de toute construction."
+    - images:
+        - img/crafting1.avif
+        - img/portfolio/hudson/40.webp
+        - img/crafting3.avif
+      en:
+        title: Build
+        subtitle: Bringing Plans to Life
+        text: "Expert craftsmen bring the design to life with premium materials and meticulous attention to detail."
+        description: "With trusted suppliers and skilled craftsmen, we bring your approved design to life. Premium materials sourced from established partners, rigorous quality control at every stage, and transparent progress updates keep you confident throughout construction. Our team coordinates every trade with precision to ensure timelines are met without compromising craftsmanship."
+      fr:
+        title: Construction
+        subtitle: Donner vie aux plans
         text: "Nos artisans experts donnent vie au design avec des matériaux haut de gamme et une attention méticuleuse aux détails."
-      - title: Livraison
+        description: "Avec des fournisseurs de confiance et des artisans qualifiés, nous donnons vie à votre design approuvé. Des matériaux haut de gamme provenant de partenaires établis, un contrôle qualité rigoureux à chaque étape et des mises à jour transparentes vous gardent en confiance tout au long de la construction. Notre équipe coordonne chaque corps de métier avec précision pour respecter les délais sans compromettre l'artisanat."
+    - images:
+        - img/portfolio/hudson/51.webp
+        - img/portfolio/hudson/70.webp
+        - img/portfolio/hudson/65.webp
+      en:
+        title: Handover
+        subtitle: "Your Home, Delivered"
+        text: "Final walkthrough, quality inspection, and handover — your home, built to last and backed by warranty."
+        description: "We present your completed home with a thorough walkthrough and quality inspection, reviewing every detail together. Full documentation, warranty coverage, and maintenance guidance are provided so you can enjoy your new home with complete peace of mind. This is the moment your vision becomes your reality."
+      fr:
+        title: Remise
+        subtitle: "Votre maison, livrée"
         text: "Visite finale, inspection qualité et remise des clés — votre maison, construite pour durer et couverte par garantie."
+        description: "Nous vous présentons votre maison terminée avec une visite approfondie et une inspection qualité, passant en revue chaque détail ensemble. Documentation complète, couverture de garantie et guide d'entretien vous sont remis pour que vous puissiez profiter de votre nouvelle maison en toute sérénité. C'est le moment où votre vision devient réalité."
 
 consultation:
   en:
