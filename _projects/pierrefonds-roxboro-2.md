@@ -3,6 +3,33 @@ order: 8
 slug: pierrefonds-roxboro 2
 images:
   - img/IMG_4427.jpg
+  - img/697eef8ab1044.jpg
+  - img/697eef915734a.jpg
+  - img/697eef9593268.jpg
+  - img/697eef9413535.jpg
+  - img/697eef931728a.jpg
+  - img/697eef93660f5.jpg
+  - img/697eef9021bde.jpg
+  - img/697eef987f1cc.jpg
+  - img/697eef963d121.jpg
+  - img/697eef952a900.jpg
+  - img/697eef946b219.jpg
+  - img/697eef924b9b5.jpg
+  - img/697eef97c3157.jpg
+  - img/697eef96b3797.jpg
+  - img/697eef93ae0eb.jpg
+  - img/697eef8fb0577.jpg
+  - img/697eef9ae23a0.jpg
+  - img/697eef9b5ae39.jpg
+  - img/697eef9c87b80.jpg
+  - img/697eef8ed1daa.jpg
+  - img/697eef8e8542c.jpg
+  - img/697eef8e25a29.jpg
+  - img/697eef8dae309.jpg
+  - img/697eef8d1e527.jpg
+  - img/697eef8c26056.jpg
+  - img/697eef8b72559.jpg
+  - img/697eef8b09181.jpg
 en:
   title: Luxury Residential Home
   location: Pierrefonds-Roxboro, QC
