@@ -117,7 +117,7 @@ components:
 content:
   - name: info
     label: Site Info
-    path: _config.yml
+    path: _data/site.yml
     type: file
     fields:
       - name: title
