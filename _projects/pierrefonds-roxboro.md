@@ -2,7 +2,7 @@
 order: 6
 slug: pierrefonds-roxboro
 images:
-  - img/14772375_1.jpg
+  - img/30media.ashx_7e697b7c-6c18-4e1d-906f-d09be3838ca7_PhotoGrid.png
 en:
   title: Luxury Residential Home
   location: Pierrefonds-Roxboro, QC
