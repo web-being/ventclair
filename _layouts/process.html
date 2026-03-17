@@ -4,15 +4,15 @@ layout: default
 <script src="{{ page.base }}script.js?1" defer></script>
 
 {% assign lang = page.lang | default: 'en' %}
-{% assign home = site.data.home %}
-{% assign d = home.process[lang] %}
+{% assign proc = site.data.process %}
+{% assign d = proc[lang] %}
 
 <!-- Glow — not clipped, bleeds into content -->
 <div class="relative">
   <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60rem] h-[40rem] bg-radial-[at_50%_0%] from-blue-400/20 via-indigo-500/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 
   <div class="overflow-x-clip">
-    {% include nav-process.html %}
+    {% include nav-inner.html %}
   </div>
 
   <header class="relative container mx-auto px-4 md:px-6 pt-8 pb-20 lg:pb-28 text-center">
@@ -25,7 +25,7 @@ layout: default
 <div class="container mx-auto px-4 md:px-6 pb-16 md:pb-24 space-y-28 lg:space-y-40">
   {% assign numerals = "I.|II.|III.|IV.|V.|VI." | split: "|" %}
 
-  {% for step in home.process.steps %}
+  {% for step in proc.steps %}
     {% assign s = step[lang] %}
     {% assign has_images = false %}{% if step.images and step.images.size > 0 %}{% assign has_images = true %}{% endif %}
     {% assign multi = false %}{% if step.images.size > 1 %}{% assign multi = true %}{% endif %}
@@ -68,7 +68,7 @@ layout: default
   {% endfor %}
 
   <!-- CTA -->
-  {% assign cd = home.consultation[lang] %}
+  {% assign cd = site.data.home.consultation[lang] %}
   <div class="text-center pt-8 lg:pt-12 track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 relative">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[48rem] h-[24rem] bg-radial-[at_50%_50%] from-blue-400/15 via-indigo-500/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
     <h2 class="playfair-display-sc font-semibold text-2xl md:text-3xl tracking-wide mb-4">{{ cd.heading }}</h2>
