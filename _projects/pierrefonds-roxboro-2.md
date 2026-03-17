@@ -14,7 +14,6 @@ images:
   - img/697eef96b3797.jpg
   - img/697eef8fb0577.jpg
   - img/697eef8ed1daa.jpg
-  - img/697eef8e8542c.jpg
   - img/697eef8dae309.jpg
   - img/697eef8b72559.jpg
 en:
