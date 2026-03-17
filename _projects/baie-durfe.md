@@ -10,8 +10,8 @@ images:
   - img/8.jpg
   - img/5.jpg
   - img/15media.ashx_c6f99697-4c0e-47cf-83b3-a097cb4740dc_PhotoGrid.png
-  - img/6.png
   - img/32media.ashx_09ab9f94-35de-4f0d-bc60-8099a97b4e54_PhotoGrid.png
+  - img/6.png
 en:
   title: Luxury Residential Home
   location: Baie-D'Urfe, QC
