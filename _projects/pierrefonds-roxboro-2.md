@@ -6,10 +6,9 @@ images:
   - img/697eef9b5ae39.jpg
   - img/697eef8ab1044.jpg
   - img/697eef931728a.jpg
-  - img/697eef93660f5.jpg
   - img/697eef963d121.jpg
+  - img/697eef93660f5.jpg
   - img/697eef97c3157.jpg
-  - img/697eef96b3797.jpg
   - img/697eef8fb0577.jpg
   - img/697eef8dae309.jpg
   - img/697eef8b72559.jpg
