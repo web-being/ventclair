@@ -153,12 +153,12 @@ process:
         - img/portfolio/hudson/70.webp
         - img/portfolio/hudson/65.webp
       en:
-        title: Handover
+        title: Delivery
         subtitle: "Your Home, Delivered"
-        text: "Final walkthrough, quality inspection, and handover — your home, built to last and backed by warranty."
+        text: "Final walkthrough, quality inspection, and delivery — your home, built to last and backed by warranty."
         description: "We present your completed home with a thorough walkthrough and quality inspection, reviewing every detail together. Full documentation, warranty coverage, and maintenance guidance are provided so you can enjoy your new home with complete peace of mind. This is the moment your vision becomes your reality."
       fr:
-        title: Remise
+        title: Livraison
         subtitle: "Votre maison, livrée"
         text: "Visite finale, inspection qualité et remise des clés — votre maison, construite pour durer et couverte par garantie."
         description: "Nous vous présentons votre maison terminée avec une visite approfondie et une inspection qualité, passant en revue chaque détail ensemble. Documentation complète, couverture de garantie et guide d'entretien vous sont remis pour que vous puissiez profiter de votre nouvelle maison en toute sérénité. C'est le moment où votre vision devient réalité."
