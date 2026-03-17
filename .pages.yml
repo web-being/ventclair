@@ -170,7 +170,7 @@ content:
             type: string
 
   - name: home
-    label: Home Page
+    label: Home
     path: _data/home.yml
     type: file
     fields:
@@ -437,7 +437,7 @@ content:
         component: locale_fr
 
   - name: process_page
-    label: Process Page
+    label: Process
     path: _data/process.yml
     type: file
     fields:
