@@ -1,32 +1,13 @@
 title: Groupe Ventclair
-description: Luxury home builder in Montreal. Premium materials, expert craftsmanship, accessible pricing.
-phone: "+1 (888) 889 8335"
+description: Luxury home builder in Montreal. Premium materials, expert
+  craftsmanship, accessible pricing.
+phone: +1 (888) 889 8335
 email: info@groupeventclair.com
 address:
-  street: "404-5500 avenue Adalbert"
-  city: "Montréal"
-  province: "QC"
-  postal: "H4W2A9"
+  street: 404-5500 avenue Adalbert
+  city: Montréal
+  province: QC
+  postal: H4W 2A9
 social:
-  facebook: "https://www.facebook.com/people/Groupe-Ventclair/61578005243465/"
-  instagram: "https://www.instagram.com/groupe_ventclair/"
-
-collections:
-  projects:
-    output: false
-    sort_by: order
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - package.json
-  - package-lock.json
-  - _style.css
-  - .work
-  - fonts
-  - "Screenshot*"
-
-keep_files:
-  - img
-  - style.css
+  facebook: https://www.facebook.com/people/Groupe-Ventclair/61578005243465/
+  instagram: https://www.instagram.com/groupe_ventclair/
