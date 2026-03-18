@@ -30,9 +30,7 @@ steps:
         évalue les conditions et travaille avec vous pour définir une portée de
         projet claire. Votre vision guide chaque décision à partir de ce moment.
   - images:
-      - img/portfolio/hudson/10.webp
-      - img/portfolio/hudson/45.webp
-      - img/portfolio/hudson/30.webp
+      - img/pexels-thirdman-5582867.webp
     en:
       title: Design
       subtitle: Planning Every Detail
