@@ -74,9 +74,7 @@ steps:
         métier avec précision pour respecter les délais sans compromettre
         l'artisanat.
   - images:
-      - img/portfolio/hudson/51.webp
-      - img/portfolio/hudson/70.webp
-      - img/portfolio/hudson/65.webp
+      - img/pexels-kindelmedia-7579192.webp
     en:
       title: Delivery
       subtitle: Your Home, Delivered
