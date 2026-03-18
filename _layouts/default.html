@@ -3,7 +3,7 @@
 <head>
   {% include head.html %}
 </head>
-<body class="{{ page.body_class | default: layout.body_class }}">
+<body class="{{ page.body_class | default: layout.body_class }} overflow-x-clip">
 <a href="#main" class="fixed top-4 left-4 z-50 bg-slate-900 text-amber-300 px-4 py-2 rounded-lg outline-2 outline-amber-400 -translate-y-16 focus:translate-y-0 transition-transform">Skip to content</a>
 <main id="main">
 {{ content }}
