@@ -70,7 +70,7 @@ layout: default
   <!-- CTA -->
   {% assign cd = site.data.home.consultation[lang] %}
   <div class="text-center pt-8 lg:pt-12 track-visible duration-1080 translate-y-6 visible:translate-y-0 opacity-0 visible:opacity-100 relative">
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[48rem] h-[24rem] bg-radial-[at_50%_50%] from-blue-400/15 via-indigo-500/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 md:w-[48rem] h-[24rem] bg-radial-[at_50%_50%] from-blue-400/15 via-indigo-500/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
     <h2 class="playfair-display-sc font-semibold text-2xl md:text-3xl tracking-wide mb-4">{{ cd.heading }}</h2>
     <p class="text-slate-400 max-w-xl mx-auto mb-8">{{ cd.text }}</p>
     <a href="{{ page.base }}{% if page.lang == 'fr' %}fr/{% endif %}#consultation"
